@@ -10,7 +10,6 @@ class MovieEvent:
     theater: str       # 영화관 (CGV, LOTTECINEMA, MEGABOX 등)
     title: str         # 이벤트 제목
     startDate: str     # 시작일 (YYYY-MM-DD HH:MM:SS)
-    endDate: str       # 종료일 (YYYY-MM-DD HH:MM:SS)
     url: str           # 상세 페이지 URL
     imageUrl: Optional[str] = None  # 이미지 URL
     category: Optional[str] = None  # 카테고리 (필요 시)

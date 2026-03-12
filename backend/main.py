@@ -56,7 +56,7 @@ def main():
         # 시작 시간(startDate)을 기준으로 오름차순 정렬
         # (MovieEvent 객체이므로 속성 접근 방식 사용)
         events.sort(key=lambda x: x.startDate if x.startDate else '9999-12-31')
-        
+
         # JSON 저장을 위해 객체를 딕셔너리 리스트로 변환
         event_dicts = [event.to_dict() for event in events]
         

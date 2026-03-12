@@ -1,7 +1,12 @@
+import os
+import sys
 import requests
 import re
 import json
 from datetime import datetime
+
+# 단독 실행 시 모듈 경로 인식 에러 방지용
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from crawlers.models import MovieEvent
 
@@ -92,9 +97,8 @@ def get_lottecinema_moviesadagu():
                         results.append(MovieEvent(
                             id=f"lotte-{main_event_id}-{movie_cd}",
                             theater="LOTTECINEMA",
-                            title=f"[무비싸다구] {title}",
+                            title=title,
                             startDate=full_start_date,
-                            endDate=end_date,
                             url=f"https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId={main_event_id}",
                             imageUrl=img_url,
                             category="무비싸다구"
@@ -107,4 +111,6 @@ def get_lottecinema_moviesadagu():
 
 if __name__ == "__main__":
     # 단독 실행 테스트용
-    print(json.dumps(get_lottecinema_moviesadagu(), indent=2, ensure_ascii=False))
+    events = get_lottecinema_moviesadagu()
+    event_dicts = [event.to_dict() for event in events]
+    print(json.dumps(event_dicts, indent=2, ensure_ascii=False))
