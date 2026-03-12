@@ -53,11 +53,14 @@ def main():
     try:
         events = fetch_all_events()
         
-        # 시작 시간(startDate)을 기준으로 오름차순(가장 임박한 이벤트 먼저) 정렬
-        # startDate가 없는 경우 맨 뒤로 보냄
-        events.sort(key=lambda x: x.get('startDate', '9999-12-31'))
+        # 시작 시간(startDate)을 기준으로 오름차순 정렬
+        # (MovieEvent 객체이므로 속성 접근 방식 사용)
+        events.sort(key=lambda x: x.startDate if x.startDate else '9999-12-31')
         
-        save_events_to_json(events)
+        # JSON 저장을 위해 객체를 딕셔너리 리스트로 변환
+        event_dicts = [event.to_dict() for event in events]
+        
+        save_events_to_json(event_dicts)
     except Exception as e:
         print(f"크롤링 통합 파이프라인 오류: {e}")
         sys.exit(1)

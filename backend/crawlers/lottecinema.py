@@ -3,9 +3,11 @@ import re
 import json
 from datetime import datetime
 
+from crawlers.models import MovieEvent
+
 def get_lottecinema_moviesadagu():
     """
-    롯데시네마 '무비싸다구' 이벤트를 크롤링하여 통일된 JSON 포맷 리스트로 반환합니다.
+    롯데시네마 '무비싸다구' 이벤트를 크롤링하여 MovieEvent 객체 리스트로 반환합니다.
     """
     base_url = "https://www.lottecinema.co.kr/NLCMW/"
     api_url = "https://www.lottecinema.co.kr/LCWS/Event/EventData.aspx"
@@ -86,15 +88,17 @@ def get_lottecinema_moviesadagu():
                         full_start_date = f"{start_date} {start_time}".strip()
                         end_date = f"{start_date} 23:59:59"
                         
-                        results.append({
-                            "id": f"lotte-{main_event_id}-{movie_cd}",
-                            "theater": "LOTTECINEMA",
-                            "title": f"[무비싸다구] {title}",
-                            "startDate": full_start_date,
-                            "endDate": end_date,
-                            "url": f"https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId={main_event_id}",
-                            "imageUrl": img_url # 프론트엔드 출력을 위해 이미지 URL 추가
-                        })
+                        # MovieEvent 객체 생성
+                        results.append(MovieEvent(
+                            id=f"lotte-{main_event_id}-{movie_cd}",
+                            theater="LOTTECINEMA",
+                            title=f"[무비싸다구] {title}",
+                            startDate=full_start_date,
+                            endDate=end_date,
+                            url=f"https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId={main_event_id}",
+                            imageUrl=img_url,
+                            category="무비싸다구"
+                        ))
                         
     except Exception as e:
         print(f"[Lotte] 무비싸다구 크롤링 중 오류 발생: {e}")

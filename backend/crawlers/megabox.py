@@ -2,10 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
+from crawlers.models import MovieEvent
+
 def get_megabox_zero_tickets():
     """
-    메가박스 '빵원티켓' 이벤트를 크롤링하여 통일된 JSON 포맷 리스트로 반환합니다.
-    (HTML DOM 및 JavaScript 속성 파싱 방식 사용)
+    메가박스 '빵원티켓' 이벤트를 크롤링하여 MovieEvent 객체 리스트로 반환합니다.
     """
     url = "https://m.megabox.co.kr/on/oh/ohe/Event/eventMngDiv.do"
     
@@ -58,14 +59,16 @@ def get_megabox_zero_tickets():
                 end_date = parts[1].strip().replace(".", "-") + " 23:59:59"
             
             if event_id:
-                results.append({
-                    "id": f"mega-{event_id}",
-                    "theater": "MEGABOX",
-                    "title": title,
-                    "startDate": start_date,
-                    "endDate": end_date,
-                    "url": f"https://megabox.co.kr/event/detail?eventNo={event_id}"
-                })
+                # MovieEvent 객체 생성
+                results.append(MovieEvent(
+                    id=f"mega-{event_id}",
+                    theater="MEGABOX",
+                    title=title,
+                    startDate=start_date,
+                    endDate=end_date,
+                    url=f"https://megabox.co.kr/event/detail?eventNo={event_id}",
+                    category="빵원티켓"
+                ))
                 
     except Exception as e:
         print(f"[Megabox] 빵원티켓 크롤링 중 오류 발생: {e}")
