@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import time
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 
@@ -17,22 +18,35 @@ OUTPUT_FILE = os.path.join(FRONTEND_DATA_DIR, "events.json")
 
 def fetch_all_events():
     """
-    3사 크롤러를 병렬(멀티스레드)로 실행하여 결과를 취합합니다.
+    3사 크롤러를 병렬(멀티스레드)로 실행하여 결과를 취합하고 개별 소요 시간을 측정합니다.
     """
-    print(f"[{datetime.now()}] 3사 영화관 할인 이벤트 크롤링 시작...")
+    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 3사 영화관 할인 이벤트 크롤링 시작...")
     events = []
     
-    # 병렬 처리를 통해 수집 속도 최적화 (I/O 바운드 작업)
+    # 시간 측정 및 에러 핸들링을 위한 래퍼 함수
+    def run_with_timing(target_func, name):
+        start_time = time.time()
+        try:
+            res = target_func()
+            duration = time.time() - start_time
+            print(f"  ✅ {name} 완료: {len(res)}개 수집 (소요 시간: {duration:.2f}초)")
+            return res
+        except Exception as e:
+            duration = time.time() - start_time
+            print(f"  ❌ {name} 오류: {e} (소요 시간: {duration:.2f}초)")
+            return []
+
+    # 병렬 처리
     with ThreadPoolExecutor(max_workers=3) as executor:
-        future_cgv = executor.submit(get_cgv_speed_coupons)
-        future_lotte = executor.submit(get_lottecinema_moviesadagu)
-        future_mega = executor.submit(get_megabox_zero_tickets)
+        future_cgv = executor.submit(run_with_timing, get_cgv_speed_coupons, "CGV")
+        future_lotte = executor.submit(run_with_timing, get_lottecinema_moviesadagu, "LotteCinema")
+        future_mega = executor.submit(run_with_timing, get_megabox_zero_tickets, "Megabox")
         
         events.extend(future_cgv.result())
         events.extend(future_lotte.result())
         events.extend(future_mega.result())
         
-    print(f"[{datetime.now()}] 총 {len(events)}개의 이벤트를 수집했습니다.")
+    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 총 {len(events)}개의 이벤트를 수집하여 병합 완료.")
     return events
 
 def save_events_to_json(events):
