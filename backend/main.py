@@ -1,0 +1,66 @@
+import json
+import os
+import sys
+from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
+
+# 크롤러 모듈 임포트
+from crawlers.cgv import get_cgv_speed_coupons
+from crawlers.lottecinema import get_lottecinema_moviesadagu
+from crawlers.megabox import get_megabox_zero_tickets
+
+# 이벤트 데이터를 저장할 최종 경로 (frontend/public/data/events.json)
+# main.py 실행 위치(backend 디렉토리)를 기준으로 상대 경로 설정
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FRONTEND_DATA_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", "frontend", "public", "data"))
+OUTPUT_FILE = os.path.join(FRONTEND_DATA_DIR, "events.json")
+
+def fetch_all_events():
+    """
+    3사 크롤러를 병렬(멀티스레드)로 실행하여 결과를 취합합니다.
+    """
+    print(f"[{datetime.now()}] 3사 영화관 할인 이벤트 크롤링 시작...")
+    events = []
+    
+    # 병렬 처리를 통해 수집 속도 최적화 (I/O 바운드 작업)
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        future_cgv = executor.submit(get_cgv_speed_coupons)
+        future_lotte = executor.submit(get_lottecinema_moviesadagu)
+        future_mega = executor.submit(get_megabox_zero_tickets)
+        
+        events.extend(future_cgv.result())
+        events.extend(future_lotte.result())
+        events.extend(future_mega.result())
+        
+    print(f"[{datetime.now()}] 총 {len(events)}개의 이벤트를 수집했습니다.")
+    return events
+
+def save_events_to_json(events):
+    """
+    수집된 이벤트를 프론트엔드 정적 파일 경로(public/data)에 JSON으로 저장합니다.
+    """
+    # 저장할 디렉토리가 없으면 생성 (예: frontend/public/data)
+    if not os.path.exists(FRONTEND_DATA_DIR):
+        os.makedirs(FRONTEND_DATA_DIR)
+        
+    # JSON 파일 생성
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(events, f, indent=2, ensure_ascii=False)
+        
+    print(f"[{datetime.now()}] 데이터가 성공적으로 저장되었습니다: {OUTPUT_FILE}")
+
+def main():
+    try:
+        events = fetch_all_events()
+        
+        # 시작 시간(startDate)을 기준으로 오름차순(가장 임박한 이벤트 먼저) 정렬
+        # startDate가 없는 경우 맨 뒤로 보냄
+        events.sort(key=lambda x: x.get('startDate', '9999-12-31'))
+        
+        save_events_to_json(events)
+    except Exception as e:
+        print(f"크롤링 통합 파이프라인 오류: {e}")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
