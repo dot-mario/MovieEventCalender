@@ -9,6 +9,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "lotte-201210016922014-24013",
+    "theater": "LOTTECINEMA",
+    "title": "프로젝트 헤일메리",
+    "startDate": "2026-03-06 16:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24013_201_1.jpg",
+    "category": "무비싸다구"
+  },
+  {
     "id": "mega-20095",
     "theater": "MEGABOX",
     "title": "아르코",
@@ -16,6 +25,15 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20095",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/05/zkIc64sKCLcZr8R4FQPn3rrhKJj3rlQh.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "lotte-201210016922014-23967",
+    "theater": "LOTTECINEMA",
+    "title": "아르코",
+    "startDate": "2026-03-09 11:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/23967_201_1.jpg",
+    "category": "무비싸다구"
   },
   {
     "id": "mega-20112",
@@ -27,6 +45,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "lotte-201210016922014-23925",
+    "theater": "LOTTECINEMA",
+    "title": "매드 댄스 오피스",
+    "startDate": "2026-03-10 14:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/23925_201_1.jpg",
+    "category": "무비싸다구"
+  },
+  {
     "id": "mega-20114",
     "theater": "MEGABOX",
     "title": "우리에게는 아직 내일이 있다",
@@ -36,6 +63,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "lotte-201210016922014-24049",
+    "theater": "LOTTECINEMA",
+    "title": "우주 수호대: 하하하 행성의 대모험",
+    "startDate": "2026-03-12 14:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24049_201_1.jpg",
+    "category": "무비싸다구"
+  },
+  {
     "id": "mega-20141",
     "theater": "MEGABOX",
     "title": "프로젝트 헤일메리",
@@ -43,5 +79,14 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20141",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/12/o2qpfnNlDKz8mPQ0VwaqWxW8mgSLyTgX.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "lotte-201210016922014-24013",
+    "theater": "LOTTECINEMA",
+    "title": "프로젝트 헤일메리",
+    "startDate": "2026-03-13 14:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24013_201_1.jpg",
+    "category": "무비싸다구"
   }
 ]
