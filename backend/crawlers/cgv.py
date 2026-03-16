@@ -119,4 +119,6 @@ def get_cgv_speed_coupons():
     return results
 
 if __name__ == "__main__":
-    print(json.dumps(get_cgv_speed_coupons(), indent=2, ensure_ascii=False))
+    events = get_cgv_speed_coupons()
+    event_dicts = [event.to_dict() for event in events]
+    print(json.dumps(event_dicts, indent=2, ensure_ascii=False))
