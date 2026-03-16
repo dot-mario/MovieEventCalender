@@ -33,7 +33,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r backend/requirements.txt
           
+      # 1. Playwright 브라우저 캐시 복원 또는 저장
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        id: playwright-cache
+        with:
+          path: ~/.cache/ms-playwright
+          # requirements.txt 파일의 해시값을 키로 사용하여, 의존성이 바뀔 때만 캐시를 갱신합니다.
+          key: ${{ runner.os }}-playwright-${{ hashFiles('backend/requirements.txt') }}
+          
+      # 2. 캐시가 없을 때(최초 1회 또는 패키지 변경 시)만 브라우저 다운로드
       - name: Install Playwright Browsers
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: playwright install chromium
         
       - name: Install Playwright OS Dependencies
