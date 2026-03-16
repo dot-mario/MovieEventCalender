@@ -2,7 +2,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
 
 # 크롤러 모듈 임포트
@@ -15,6 +15,13 @@ from crawlers.megabox import get_megabox_zero_tickets
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FRONTEND_DATA_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", "frontend", "public", "data"))
 OUTPUT_FILE = os.path.join(FRONTEND_DATA_DIR, "events.json")
+ICS_OUTPUT_FILE = os.path.join(FRONTEND_DATA_DIR, "events.ics")
+
+THEATER_LABELS = {
+    "CGV": "CGV",
+    "MEGABOX": "메가박스",
+    "LOTTECINEMA": "롯데시네마",
+}
 
 def fetch_all_events():
     """
@@ -63,6 +70,61 @@ def save_events_to_json(events):
         
     print(f"[{datetime.now()}] 데이터가 성공적으로 저장되었습니다: {OUTPUT_FILE}")
 
+def save_events_to_ics(events):
+    """
+    수집된 이벤트를 ICS(iCalendar) 형식으로 변환하여 저장합니다.
+    사용자가 이 파일을 구독하면 캘린더에 이벤트가 자동으로 추가됩니다.
+    """
+    if not os.path.exists(FRONTEND_DATA_DIR):
+        os.makedirs(FRONTEND_DATA_DIR)
+
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//MovieEventCalendar//KR",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "X-WR-CALNAME:영화 할인 이벤트",
+        "X-WR-TIMEZONE:Asia/Seoul",
+    ]
+
+    for event in events:
+        try:
+            start_dt = datetime.strptime(event["startDate"], "%Y-%m-%d %H:%M:%S")
+        except (ValueError, KeyError):
+            continue
+
+        end_dt = start_dt + timedelta(minutes=30)
+        uid = f'{event["id"]}@movieeventcalendar'
+        theater_label = THEATER_LABELS.get(event.get("theater", ""), event.get("theater", ""))
+        summary = f"[{theater_label}] {event.get('title', '')} - {event.get('category', '')}"
+
+        fmt = lambda d: d.strftime("%Y%m%dT%H%M%S")
+
+        lines.extend([
+            "BEGIN:VEVENT",
+            f"UID:{uid}",
+            f"DTSTART;TZID=Asia/Seoul:{fmt(start_dt)}",
+            f"DTEND;TZID=Asia/Seoul:{fmt(end_dt)}",
+            f"SUMMARY:{summary}",
+            f"DESCRIPTION:예매 링크: {event.get('url', '')}",
+            f"URL:{event.get('url', '')}",
+            f"LOCATION:{theater_label}",
+            "BEGIN:VALARM",
+            "TRIGGER:-PT10M",
+            "ACTION:DISPLAY",
+            "DESCRIPTION:이벤트 10분 전 알림",
+            "END:VALARM",
+            "END:VEVENT",
+        ])
+
+    lines.append("END:VCALENDAR")
+
+    with open(ICS_OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write("\r\n".join(lines))
+
+    print(f"[{datetime.now()}] ICS 파일이 성공적으로 저장되었습니다: {ICS_OUTPUT_FILE}")
+
 def main():
     try:
         events = fetch_all_events()
@@ -75,6 +137,7 @@ def main():
         event_dicts = [event.to_dict() for event in events]
         
         save_events_to_json(event_dicts)
+        save_events_to_ics(event_dicts)
     except Exception as e:
         print(f"크롤링 통합 파이프라인 오류: {e}")
         sys.exit(1)
