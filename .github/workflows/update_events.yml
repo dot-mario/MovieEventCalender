@@ -6,6 +6,10 @@ on:
     - cron: '0 */2 * * *'
   workflow_dispatch:
     # 수동 실행 트리거 제공
+  push:
+    # 코드를 커밋하고 푸시할 때마다 즉시 워크플로우 실행
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -29,6 +33,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r backend/requirements.txt
           
+      - name: Install Playwright Browsers
+        run: playwright install chromium
+        
+      - name: Install Playwright OS Dependencies
+        run: playwright install-deps chromium
+      
       - name: Run Crawler
         run: |
           python backend/main.py
