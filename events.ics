@@ -1,0 +1,190 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MovieEventCalendar//KR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:영화 할인 이벤트
+X-WR-TIMEZONE:Asia/Seoul
+BEGIN:VEVENT
+UID:mega-20094@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260306T143000
+DTEND;TZID=Asia/Seoul:20260306T150000
+SUMMARY:[메가박스] 프로젝트 헤일메리 - 빵원티켓
+DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20094
+URL:https://megabox.co.kr/event/detail?eventNo=20094
+LOCATION:메가박스
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lotte-201210016922014-24013@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260306T160000
+DTEND;TZID=Asia/Seoul:20260306T163000
+SUMMARY:[롯데시네마] 프로젝트 헤일메리 - 무비싸다구
+DESCRIPTION:예매 링크: https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+URL:https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+LOCATION:롯데시네마
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-20095@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260306T163000
+DTEND;TZID=Asia/Seoul:20260306T170000
+SUMMARY:[메가박스] 아르코 - 빵원티켓
+DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20095
+URL:https://megabox.co.kr/event/detail?eventNo=20095
+LOCATION:메가박스
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lotte-201210016922014-23967@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260309T110000
+DTEND;TZID=Asia/Seoul:20260309T113000
+SUMMARY:[롯데시네마] 아르코 - 무비싸다구
+DESCRIPTION:예매 링크: https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+URL:https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+LOCATION:롯데시네마
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-20141@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260313T113000
+DTEND;TZID=Asia/Seoul:20260313T120000
+SUMMARY:[메가박스] 프로젝트 헤일메리 - 빵원티켓
+DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20141
+URL:https://megabox.co.kr/event/detail?eventNo=20141
+LOCATION:메가박스
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lotte-201210016922014-24013@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260313T140000
+DTEND;TZID=Asia/Seoul:20260313T143000
+SUMMARY:[롯데시네마] 프로젝트 헤일메리 - 무비싸다구
+DESCRIPTION:예매 링크: https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+URL:https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+LOCATION:롯데시네마
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cgv-202603127127@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260316T120000
+DTEND;TZID=Asia/Seoul:20260316T123000
+SUMMARY:[CGV] 프로젝트 헤일메리 - 서프라이즈쿠폰
+DESCRIPTION:예매 링크: https://cgv.co.kr/evt/eventDetail?evntNo=202603127127
+URL:https://cgv.co.kr/evt/eventDetail?evntNo=202603127127
+LOCATION:CGV
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cgv-202603127038@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260316T140000
+DTEND;TZID=Asia/Seoul:20260316T143000
+SUMMARY:[CGV] 귀신 부르는 앱- 영 - 서프라이즈쿠폰
+DESCRIPTION:예매 링크: https://cgv.co.kr/evt/eventDetail?evntNo=202603127038
+URL:https://cgv.co.kr/evt/eventDetail?evntNo=202603127038
+LOCATION:CGV
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-20159@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260317T113000
+DTEND;TZID=Asia/Seoul:20260317T120000
+SUMMARY:[메가박스] 메소드연기 - 빵원티켓
+DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20159
+URL:https://megabox.co.kr/event/detail?eventNo=20159
+LOCATION:메가박스
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cgv-202603136842@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260317T120000
+DTEND;TZID=Asia/Seoul:20260317T123000
+SUMMARY:[CGV] 메소드연기 - 서프라이즈쿠폰
+DESCRIPTION:예매 링크: https://cgv.co.kr/evt/eventDetail?evntNo=202603136842
+URL:https://cgv.co.kr/evt/eventDetail?evntNo=202603136842
+LOCATION:CGV
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cgv-202603136948@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260317T140000
+DTEND;TZID=Asia/Seoul:20260317T143000
+SUMMARY:[CGV] 삼악도 - 서프라이즈쿠폰
+DESCRIPTION:예매 링크: https://cgv.co.kr/evt/eventDetail?evntNo=202603136948
+URL:https://cgv.co.kr/evt/eventDetail?evntNo=202603136948
+LOCATION:CGV
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lotte-201210016922014-24018@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260317T140000
+DTEND;TZID=Asia/Seoul:20260317T143000
+SUMMARY:[롯데시네마] 메소드연기 - 무비싸다구
+DESCRIPTION:예매 링크: https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+URL:https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+LOCATION:롯데시네마
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cgv-202603136843@movieeventcalendar
+DTSTART;TZID=Asia/Seoul:20260317T160000
+DTEND;TZID=Asia/Seoul:20260317T163000
+SUMMARY:[CGV] 폭탄 - 서프라이즈쿠폰
+DESCRIPTION:예매 링크: https://cgv.co.kr/evt/eventDetail?evntNo=202603136843
+URL:https://cgv.co.kr/evt/eventDetail?evntNo=202603136843
+LOCATION:CGV
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+END:VCALENDAR
