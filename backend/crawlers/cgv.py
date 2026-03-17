@@ -26,7 +26,7 @@ def extract_events(data):
     return events
 
 def get_cgv_speed_coupons():
-    keyword = urllib.parse.quote("스피드")
+    keyword = urllib.parse.quote("쿠폰")
     target_url = f"https://cgv.co.kr/tme/itgrSrch?swrd={keyword}"
     results = []
     
