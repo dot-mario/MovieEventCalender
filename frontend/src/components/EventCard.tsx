@@ -118,7 +118,7 @@ export default function EventCard({ event }: EventCardProps) {
         {/* 타이머 뱃지 */}
         <div className="absolute top-3 right-3">
           <span
-            className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-bold backdrop-blur-md ${
+            className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-bold backdrop-blur-md ${
               remaining.isPast
                 ? 'bg-gray-500/40 text-gray-300'
                 : remaining.isLive
@@ -130,28 +130,21 @@ export default function EventCard({ event }: EventCardProps) {
             {remaining.label}
           </span>
         </div>
-
-        {/* 극장 뱃지 */}
-        <div className="absolute top-3 left-3">
-          <span className={`inline-flex rounded-full border px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider backdrop-blur-md ${style.badge}`}>
-            {THEATER_LABELS[event.theater]}
-          </span>
-        </div>
       </div>
 
       {/* 정보 영역 */}
-      <div className="p-4 space-y-3">
+      <div className="p-5 space-y-3">
         <div>
-          <h3 className="text-lg font-bold text-white leading-tight line-clamp-2">
+          <h3 className="text-xl font-bold text-white leading-tight line-clamp-2">
             {event.title}
           </h3>
-          <p className={`mt-1 text-xs font-medium ${style.text}`}>
-            {event.category}
+          <p className={`mt-1.5 text-sm font-medium ${style.text}`}>
+            {THEATER_LABELS[event.theater]} · {event.category}
           </p>
         </div>
 
-        <div className="flex items-center gap-2 text-xs text-gray-400">
-          <svg className="h-3.5 w-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <div className="flex items-center gap-2 text-sm text-gray-400">
+          <svg className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
           <span>{formatDate(event.startDate)}</span>
@@ -163,7 +156,7 @@ export default function EventCard({ event }: EventCardProps) {
             href={event.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20 active:scale-95"
+            className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-base font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20 active:scale-95"
           >
             이벤트 페이지 →
           </a>
@@ -174,7 +167,7 @@ export default function EventCard({ event }: EventCardProps) {
             className="flex items-center justify-center rounded-xl bg-white/10 px-3 py-2.5 text-white backdrop-blur-sm transition-all hover:bg-white/20 active:scale-95"
             title="Google 캘린더에 추가"
           >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
           </a>
