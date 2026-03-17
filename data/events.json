@@ -18,24 +18,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "mega-20095",
-    "theater": "MEGABOX",
-    "title": "아르코",
-    "startDate": "2026-03-06 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20095",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/05/zkIc64sKCLcZr8R4FQPn3rrhKJj3rlQh.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "lotte-201210016922014-23967",
-    "theater": "LOTTECINEMA",
-    "title": "아르코",
-    "startDate": "2026-03-09 11:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/23967_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
     "id": "mega-20141",
     "theater": "MEGABOX",
     "title": "프로젝트 헤일메리",
