@@ -63,6 +63,24 @@
     "category": "무비싸다구"
   },
   {
+    "id": "cgv-202603127127",
+    "theater": "CGV",
+    "title": "[프로젝트 헤일메리] 서프라이즈 쿠폰",
+    "startDate": "2026-03-16 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603127127",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0312/a93f38ded0c548aa8701217e961fa139.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202603127038",
+    "theater": "CGV",
+    "title": "[귀신 부르는 앱- 영] 3차 서프라이즈 쿠폰",
+    "startDate": "2026-03-16 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603127038",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0313/1218b3b72613444b854f45c0c9577f0f.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "mega-20159",
     "theater": "MEGABOX",
     "title": "메소드연기",
@@ -72,6 +90,24 @@
     "category": "빵원티켓"
   },
   {
+    "id": "cgv-202603136842",
+    "theater": "CGV",
+    "title": "[메소드연기] 서프라이즈 쿠폰",
+    "startDate": "2026-03-17 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603136842",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0313/e7100df1aaaa4717a99133df7e882ec7.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202603136948",
+    "theater": "CGV",
+    "title": "[삼악도] 3차 서프라이즈 쿠폰",
+    "startDate": "2026-03-17 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603136948",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0313/0791012601fc492191865a5647418d15.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "lotte-201210016922014-24018",
     "theater": "LOTTECINEMA",
     "title": "메소드연기",
@@ -79,5 +115,14 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24018_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "cgv-202603136843",
+    "theater": "CGV",
+    "title": "[폭탄] 2차 서프라이즈 쿠폰",
+    "startDate": "2026-03-17 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603136843",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0313/6e940d362bc6464ca0440c53e87242db.jpg",
+    "category": "서프라이즈쿠폰"
   }
 ]
