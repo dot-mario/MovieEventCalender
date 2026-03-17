@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch('/data/events.json')
+    fetch(`${import.meta.env.BASE_URL}data/events.json`)
       .then((res) => {
         if (!res.ok) throw new Error('데이터를 불러올 수 없습니다.');
         return res.json();
@@ -77,7 +77,7 @@ function App() {
   }, [filtered]);
 
   // ICS 구독 URL (현재 호스트 기준)
-  const icsUrl = `${window.location.origin}/data/events.ics`;
+  const icsUrl = `${window.location.origin}${import.meta.env.BASE_URL}data/events.ics`;
 
   const handleCopyIcs = async () => {
     try {
@@ -133,7 +133,7 @@ function App() {
                 {icsCopied ? '✓ 복사됨!' : '구독 URL 복사'}
               </button>
               <a
-                href="/data/events.ics"
+                href={`${import.meta.env.BASE_URL}data/events.ics`}
                 download="movie_events.ics"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-gray-300 transition-all hover:bg-white/10 hover:text-white active:scale-95"
                 title="ICS 파일 다운로드"
