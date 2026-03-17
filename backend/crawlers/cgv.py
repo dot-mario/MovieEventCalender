@@ -2,6 +2,7 @@ import os
 import sys
 import urllib.parse
 import json
+import re  # 정규식 모듈 추가
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 # 단독 실행 시 모듈 경로 인식 에러 방지용
@@ -26,7 +27,6 @@ def extract_events(data):
     return events
 
 def get_cgv_coupons():
-    # 검색 키워드 '쿠폰'으로 변경
     keyword = urllib.parse.quote("쿠폰")
     target_url = f"https://cgv.co.kr/tme/itgrSrch?swrd={keyword}"
     results = []
@@ -50,7 +50,6 @@ def get_cgv_coupons():
                 try:
                     data = response.json()
                     json_str = json.dumps(data, ensure_ascii=False)
-                    # 필터링 기준도 '쿠폰'으로 변경
                     if "evntNo" in json_str and "쿠폰" in json_str:
                         found_events = extract_events(data)
                         intercepted_events.extend(found_events)
@@ -60,7 +59,6 @@ def get_cgv_coupons():
         page.on("response", handle_response)
         
         try:
-            # 타임아웃 완화 및 방어 로직 적용
             page.goto(target_url, wait_until="domcontentloaded", timeout=15000)
             page.wait_for_timeout(3000)
             
@@ -77,10 +75,9 @@ def get_cgv_coupons():
         seen_ids = set()
         
         for event in intercepted_events:
-            title = event.get("evntNm", "")
+            raw_title = event.get("evntNm", "")
             
-            # 제목에 '쿠폰'이 포함된 것만 처리
-            if "쿠폰" not in title:
+            if "쿠폰" not in raw_title:
                 continue
                 
             event_id = str(event.get("evntNo", ""))
@@ -88,6 +85,10 @@ def get_cgv_coupons():
             if event_id in seen_ids:
                 continue
             seen_ids.add(event_id)
+            
+            # 대괄호 안의 영화 이름만 추출 (없으면 원본 유지)
+            title_match = re.search(r'\[(.*?)\]', raw_title)
+            movie_title = title_match.group(1).strip() if title_match else raw_title
             
             start_date = event.get("evntStartDt", "")
             end_date = event.get("evntEndDt", "")
@@ -101,17 +102,17 @@ def get_cgv_coupons():
                 if img_path and img_file:
                     image_url = f"https://cdn.cgv.co.kr/{img_path}/{img_file}"
                 
-                # 제목을 기반으로 카테고리 동적 세분화
+                # 원본 제목(raw_title)을 기준으로 카테고리 판별
                 category_name = "쿠폰"
-                if "스피드" in title:
+                if "스피드" in raw_title:
                     category_name = "스피드쿠폰"
-                elif "서프라이즈" in title:
+                elif "서프라이즈" in raw_title:
                     category_name = "서프라이즈쿠폰"
                 
                 movie_event = MovieEvent(
                     id=f"cgv-{event_id}",
                     theater="CGV",
-                    title=title,
+                    title=movie_title,  # 추출한 영화 이름 할당
                     startDate=start_date,
                     url=f"https://cgv.co.kr/evt/eventDetail?evntNo={event_id}",
                     imageUrl=image_url,
