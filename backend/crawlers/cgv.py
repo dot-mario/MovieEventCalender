@@ -2,7 +2,7 @@ import os
 import sys
 import urllib.parse
 import json
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 # 단독 실행 시 모듈 경로 인식 에러 방지용
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -25,7 +25,8 @@ def extract_events(data):
             events.extend(extract_events(item))
     return events
 
-def get_cgv_speed_coupons():
+def get_cgv_coupons():
+    # 검색 키워드 '쿠폰'으로 변경
     keyword = urllib.parse.quote("쿠폰")
     target_url = f"https://cgv.co.kr/tme/itgrSrch?swrd={keyword}"
     results = []
@@ -33,7 +34,6 @@ def get_cgv_speed_coupons():
     print("[CGV] Playwright 브라우저 시작 (광역 네트워크 인터셉트 중)...")
     
     with sync_playwright() as p:
-        # 봇 탐지 우회 옵션을 유지한 채 백그라운드 실행(headless=True)
         browser = p.chromium.launch(
             headless=True, 
             args=["--disable-blink-features=AutomationControlled"]
@@ -45,80 +45,85 @@ def get_cgv_speed_coupons():
         
         intercepted_events = []
         
-        # 특정 API 이름 대신, 데이터 내용물로 필터링하는 넓은 그물망
         def handle_response(response):
-            # cgv 관련 API에서 200 OK 응답이 온 경우만 확인
             if "api.cgv.co.kr" in response.url and response.status == 200:
                 try:
                     data = response.json()
-                    # 응답 데이터를 통째로 문자열로 바꿔서 타겟 데이터가 있는지 빠른 검사
                     json_str = json.dumps(data, ensure_ascii=False)
+                    # 필터링 기준도 '쿠폰'으로 변경
                     if "evntNo" in json_str and "쿠폰" in json_str:
-                        # 타겟 데이터가 있으면 정밀 탐색 함수(extract_events)로 객체 추출
                         found_events = extract_events(data)
                         intercepted_events.extend(found_events)
                 except Exception:
-                    pass # JSON이 아닌 응답(이미지 등)은 무시
+                    pass 
 
         page.on("response", handle_response)
         
         try:
-            # 네트워크 통신이 끝날 때까지 대기
-            page.goto(target_url, wait_until="networkidle", timeout=20000)
+            # 타임아웃 완화 및 방어 로직 적용
+            page.goto(target_url, wait_until="domcontentloaded", timeout=15000)
+            page.wait_for_timeout(3000)
             
-            if not intercepted_events:
-                print("\n[CGV] ❌ 타겟 데이터를 찾을 수 없습니다.")
-                return []
-                
-            # 중복 제거 (동일 이벤트가 여러 API에서 올 경우 대비)
-            seen_ids = set()
-            
-            for event in intercepted_events:
-                title = event.get("evntNm", "")
-                
-                if "스피드" not in title:
-                    continue
-                    
-                event_id = str(event.get("evntNo", ""))
-                
-                if event_id in seen_ids:
-                    continue
-                seen_ids.add(event_id)
-                
-                start_date = event.get("evntStartDt", "")
-                end_date = event.get("evntEndDt", "")
-                if end_date:
-                    end_date = f"{end_date} 23:59:59"
-                    
-                if event_id:
-                    # 이미지 URL 조합 로직 추가
-                    img_path = event.get("mduBanrPhyscFilePathnm", "")
-                    img_file = event.get("mduBanrPhyscFnm", "")
-                    image_url = ""
-                    if img_path and img_file:
-                        # CDN 호스트명 추가
-                        image_url = f"https://cdn.cgv.co.kr/{img_path}/{img_file}"
-                    
-                    movie_event = MovieEvent(
-                        id=f"cgv-{event_id}",
-                        theater="CGV",
-                        title=title,
-                        startDate=start_date,
-                        url=f"https://cgv.co.kr/evt/eventDetail?evntNo={event_id}",
-                        imageUrl=image_url,
-                        category="스피드쿠폰"
-                    )
-                    results.append(movie_event)
-                    
+        except PlaywrightTimeoutError:
+            print("[CGV] 페이지 로딩 타임아웃. 수집된 데이터를 검증하고 계속 진행합니다.")
         except Exception as e:
             print(f"[CGV] 브라우저 자동화 크롤링 중 오류: {e}")
             
-        finally:
+        if not intercepted_events:
+            print("\n[CGV] ❌ 타겟 데이터를 찾을 수 없습니다.")
             browser.close()
+            return []
+            
+        seen_ids = set()
+        
+        for event in intercepted_events:
+            title = event.get("evntNm", "")
+            
+            # 제목에 '쿠폰'이 포함된 것만 처리
+            if "쿠폰" not in title:
+                continue
+                
+            event_id = str(event.get("evntNo", ""))
+            
+            if event_id in seen_ids:
+                continue
+            seen_ids.add(event_id)
+            
+            start_date = event.get("evntStartDt", "")
+            end_date = event.get("evntEndDt", "")
+            if end_date:
+                end_date = f"{end_date} 23:59:59"
+                
+            if event_id:
+                img_path = event.get("mduBanrPhyscFilePathnm", "")
+                img_file = event.get("mduBanrPhyscFnm", "")
+                image_url = ""
+                if img_path and img_file:
+                    image_url = f"https://cdn.cgv.co.kr/{img_path}/{img_file}"
+                
+                # 제목을 기반으로 카테고리 동적 세분화
+                category_name = "쿠폰"
+                if "스피드" in title:
+                    category_name = "스피드쿠폰"
+                elif "서프라이즈" in title:
+                    category_name = "서프라이즈쿠폰"
+                
+                movie_event = MovieEvent(
+                    id=f"cgv-{event_id}",
+                    theater="CGV",
+                    title=title,
+                    startDate=start_date,
+                    url=f"https://cgv.co.kr/evt/eventDetail?evntNo={event_id}",
+                    imageUrl=image_url,
+                    category=category_name
+                )
+                results.append(movie_event)
+                
+        browser.close()
             
     return results
 
 if __name__ == "__main__":
-    events = get_cgv_speed_coupons()
+    events = get_cgv_coupons()
     event_dicts = [event.to_dict() for event in events]
     print(json.dumps(event_dicts, indent=2, ensure_ascii=False))
