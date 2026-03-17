@@ -74,9 +74,14 @@ def save_events_to_ics(events):
     """
     수집된 이벤트를 ICS(iCalendar) 형식으로 변환하여 저장합니다.
     사용자가 이 파일을 구독하면 캘린더에 이벤트가 자동으로 추가됩니다.
+    이미 지난 이벤트는 파일에 포함하지 않습니다.
     """
     if not os.path.exists(FRONTEND_DATA_DIR):
         os.makedirs(FRONTEND_DATA_DIR)
+
+    # 현재 시간을 KST(UTC+9) 기준으로 계산
+    # GitHub Actions 등 UTC 환경에서도 정확히 작동하도록 함
+    now_kst = datetime.utcnow() + timedelta(hours=9)
 
     lines = [
         "BEGIN:VCALENDAR",
@@ -103,6 +108,10 @@ def save_events_to_ics(events):
         except (ValueError, KeyError):
             continue
 
+        # 이미 지난 이벤트는 건너뜀
+        if start_dt < now_kst:
+            continue
+
         end_dt = start_dt + timedelta(minutes=30)
         start_time_str = start_dt.strftime("%Y%m%dT%H%M%S")
         uid = f'{event["id"]}-{start_time_str}@movieeventcalendar'
@@ -110,7 +119,7 @@ def save_events_to_ics(events):
         summary = f"[{theater_label}] {event.get('title', '')} - {event.get('category', '')}"
 
         fmt = lambda d: d.strftime("%Y%m%dT%H%M%S")
-        now_str = fmt(datetime.now())
+        now_str = now_kst.strftime("%Y%m%dT%H%M%S")
 
         lines.extend([
             "BEGIN:VEVENT",
@@ -138,7 +147,7 @@ def save_events_to_ics(events):
     with open(ICS_OUTPUT_FILE, "w", encoding="utf-8", newline="") as f:
         f.write("\r\n".join(lines) + "\r\n")
 
-    print(f"[{datetime.now()}] ICS 파일이 성공적으로 저장되었습니다: {ICS_OUTPUT_FILE}")
+    print(f"[{now_kst}] ICS 파일이 성공적으로 저장되었습니다 (지난 이벤트 제외): {ICS_OUTPUT_FILE}")
 
 def main():
     try:
