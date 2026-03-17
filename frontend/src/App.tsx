@@ -57,6 +57,8 @@ function App() {
         pa.push(e);
       }
     });
+    // 지난 이벤트는 최신순(내림차순)으로 정렬
+    pa.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
     return { upcoming: up, past: pa };
   }, [filtered, now]);
 
