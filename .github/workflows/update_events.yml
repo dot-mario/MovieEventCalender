@@ -55,6 +55,7 @@ jobs:
           python backend/main.py
           
       - name: Set up Node.js
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -62,20 +63,34 @@ jobs:
           cache-dependency-path: './frontend/package-lock.json'
 
       - name: Install Frontend dependencies
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           cd frontend
           npm install
 
       - name: Build Frontend
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           cd frontend
           npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy Frontend (Full)
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/dist
           publish_branch: gh-pages
           force_orphan: false
-          commit_message: "Auto Update: Movie Events Data & Web App"
+          commit_message: "Auto Update: Web App (Build)"
+
+      - name: Deploy Data Only (Schedule)
+        if: github.event_name == 'schedule'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/public/data
+          destination_dir: data
+          publish_branch: gh-pages
+          keep_files: true
+          commit_message: "Auto Update: Movie Events Data"
