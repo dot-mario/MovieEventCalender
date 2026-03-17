@@ -25,7 +25,7 @@ function App() {
         return res.json();
       })
       .then((data: MovieEvent[]) => {
-        data.sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
+        data.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
         setEvents(data);
         setLoading(false);
       })
@@ -57,7 +57,8 @@ function App() {
         pa.push(e);
       }
     });
-    // 지난 이벤트는 최신순(내림차순)으로 정렬
+    // 둘 다 최신순(내림차순)으로 정렬
+    up.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
     pa.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
     return { upcoming: up, past: pa };
   }, [filtered, now]);
@@ -70,12 +71,17 @@ function App() {
       list.push(e);
       groups.set(e.title, list);
     });
-    // 가장 빠른 이벤트 시간 기준으로 그룹 정렬
-    return Array.from(groups.entries()).sort(([, a], [, b]) => {
-      const aMin = Math.min(...a.map((e) => new Date(e.startDate).getTime()));
-      const bMin = Math.min(...b.map((e) => new Date(e.startDate).getTime()));
-      return aMin - bMin;
-    });
+    // 그룹 내 이벤트를 최신순으로 정렬하고, 그룹 간 정렬도 가장 최신 이벤트 기준으로 내림차순 정렬
+    return Array.from(groups.entries())
+      .map(([title, events]) => {
+        const sortedEvents = [...events].sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
+        return [title, sortedEvents] as [string, MovieEvent[]];
+      })
+      .sort(([, a], [, b]) => {
+        const aMax = new Date(a[0].startDate).getTime();
+        const bMax = new Date(b[0].startDate).getTime();
+        return bMax - aMax;
+      });
   }, [filtered]);
 
   // ICS 구독 URL (현재 호스트 기준)
@@ -206,7 +212,7 @@ function App() {
                     </h2>
                     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                       {upcoming.map((event) => (
-                        <EventCard key={event.id} event={event} />
+                        <EventCard key={`${event.id}-${event.startDate}`} event={event} />
                       ))}
                     </div>
                   </section>
@@ -221,7 +227,7 @@ function App() {
                     </h2>
                     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                       {past.map((event) => (
-                        <EventCard key={event.id} event={event} />
+                        <EventCard key={`${event.id}-${event.startDate}`} event={event} />
                       ))}
                     </div>
                   </section>
@@ -240,7 +246,7 @@ function App() {
                     </h2>
                     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                       {movieEvents.map((event) => (
-                        <EventCard key={event.id} event={event} />
+                        <EventCard key={`${event.id}-${event.startDate}`} event={event} />
                       ))}
                     </div>
                   </section>
