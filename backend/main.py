@@ -86,6 +86,15 @@ def save_events_to_ics(events):
         "METHOD:PUBLISH",
         "X-WR-CALNAME:영화 할인 이벤트",
         "X-WR-TIMEZONE:Asia/Seoul",
+        "BEGIN:VTIMEZONE",
+        "TZID:Asia/Seoul",
+        "BEGIN:STANDARD",
+        "TZOFFSETFROM:+0900",
+        "TZOFFSETTO:+0900",
+        "TZNAME:KST",
+        "DTSTART:19700101T000000",
+        "END:STANDARD",
+        "END:VTIMEZONE",
     ]
 
     for event in events:
@@ -95,7 +104,8 @@ def save_events_to_ics(events):
             continue
 
         end_dt = start_dt + timedelta(minutes=30)
-        uid = f'{event["id"]}@movieeventcalendar'
+        start_time_str = start_dt.strftime("%Y%m%dT%H%M%S")
+        uid = f'{event["id"]}-{start_time_str}@movieeventcalendar'
         theater_label = THEATER_LABELS.get(event.get("theater", ""), event.get("theater", ""))
         summary = f"[{theater_label}] {event.get('title', '')} - {event.get('category', '')}"
 
@@ -125,8 +135,8 @@ def save_events_to_ics(events):
 
     lines.append("END:VCALENDAR")
 
-    with open(ICS_OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("\r\n".join(lines))
+    with open(ICS_OUTPUT_FILE, "w", encoding="utf-8", newline="") as f:
+        f.write("\r\n".join(lines) + "\r\n")
 
     print(f"[{datetime.now()}] ICS 파일이 성공적으로 저장되었습니다: {ICS_OUTPUT_FILE}")
 
