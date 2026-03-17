@@ -71,9 +71,7 @@ def get_cgv_coupons():
         page.on("response", handle_response)
         
         try:
-            print(f"[CGV] 접속 시도 중: {target_url}")
             page.goto(target_url, wait_until="networkidle", timeout=30000)
-            print(f"[CGV] 페이지 제목: {page.title()}")
             page.wait_for_timeout(5000) # 추가 로딩 대기
             
         except PlaywrightTimeoutError:
