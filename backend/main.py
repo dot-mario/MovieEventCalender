@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
 
 # 크롤러 모듈 임포트
-from crawlers.cgv import get_cgv_speed_coupons
+from crawlers.cgv import get_cgv_coupons
 from crawlers.lottecinema import get_lottecinema_moviesadagu
 from crawlers.megabox import get_megabox_zero_tickets
 
@@ -45,7 +45,7 @@ def fetch_all_events():
 
     # 병렬 처리
     with ThreadPoolExecutor(max_workers=3) as executor:
-        future_cgv = executor.submit(run_with_timing, get_cgv_speed_coupons, "CGV")
+        future_cgv = executor.submit(run_with_timing, get_cgv_coupons, "CGV")
         future_lotte = executor.submit(run_with_timing, get_lottecinema_moviesadagu, "LotteCinema")
         future_mega = executor.submit(run_with_timing, get_megabox_zero_tickets, "Megabox")
         
