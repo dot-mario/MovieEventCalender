@@ -53,7 +53,7 @@ def get_cgv_speed_coupons():
                     data = response.json()
                     # 응답 데이터를 통째로 문자열로 바꿔서 타겟 데이터가 있는지 빠른 검사
                     json_str = json.dumps(data, ensure_ascii=False)
-                    if "evntNo" in json_str and "스피드" in json_str:
+                    if "evntNo" in json_str and "쿠폰" in json_str:
                         # 타겟 데이터가 있으면 정밀 탐색 함수(extract_events)로 객체 추출
                         found_events = extract_events(data)
                         intercepted_events.extend(found_events)
