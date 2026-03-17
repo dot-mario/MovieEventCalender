@@ -1,1 +1,6 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data
 frontend/public/data/events.json
