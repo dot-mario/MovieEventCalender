@@ -2,5 +2,6 @@
 __pycache__/
 *.pyc
 
-# Data
+# Result Files
+*.ics
 frontend/public/data/events.json
