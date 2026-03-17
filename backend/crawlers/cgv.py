@@ -36,21 +36,33 @@ def get_cgv_coupons():
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True, 
-            args=["--disable-blink-features=AutomationControlled"]
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-setuid-sandbox"
+            ]
         )
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            locale="ko-KR",
+            timezone_id="Asia/Seoul",
+            viewport={'width': 1920, 'height': 1080},
+            extra_http_headers={
+                "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
+            }
         )
         page = context.new_page()
         
         intercepted_events = []
         
         def handle_response(response):
+            # CGV API 응답 캡처 (이벤트 관련 키워드 포함 여부 확인)
             if "api.cgv.co.kr" in response.url and response.status == 200:
                 try:
                     data = response.json()
                     json_str = json.dumps(data, ensure_ascii=False)
-                    if "evntNo" in json_str and "쿠폰" in json_str:
+                    # "evntNo"가 포함된 모든 응답을 일단 파싱 시도 (쿠폰 키워드 필터링은 나중에 수행)
+                    if "evntNo" in json_str:
                         found_events = extract_events(data)
                         intercepted_events.extend(found_events)
                 except Exception:
@@ -59,16 +71,18 @@ def get_cgv_coupons():
         page.on("response", handle_response)
         
         try:
-            page.goto(target_url, wait_until="domcontentloaded", timeout=15000)
-            page.wait_for_timeout(3000)
+            print(f"[CGV] 접속 시도 중: {target_url}")
+            page.goto(target_url, wait_until="networkidle", timeout=30000)
+            print(f"[CGV] 페이지 제목: {page.title()}")
+            page.wait_for_timeout(5000) # 추가 로딩 대기
             
         except PlaywrightTimeoutError:
-            print("[CGV] 페이지 로딩 타임아웃. 수집된 데이터를 검증하고 계속 진행합니다.")
+            print("[CGV] 페이지 로딩 타임아웃 또는 networkidle 도달 실패. 현재까지 수집된 데이터로 진행합니다.")
         except Exception as e:
             print(f"[CGV] 브라우저 자동화 크롤링 중 오류: {e}")
             
         if not intercepted_events:
-            print("\n[CGV] ❌ 타겟 데이터를 찾을 수 없습니다.")
+            print("\n[CGV] ❌ 타겟 데이터를 찾을 수 없습니다. (차단되었거나 인터셉트 실패)")
             browser.close()
             return []
             
