@@ -100,16 +100,21 @@ def save_events_to_ics(events):
         summary = f"[{theater_label}] {event.get('title', '')} - {event.get('category', '')}"
 
         fmt = lambda d: d.strftime("%Y%m%dT%H%M%S")
+        now_str = fmt(datetime.now())
 
         lines.extend([
             "BEGIN:VEVENT",
             f"UID:{uid}",
+            f"DTSTAMP:{now_str}",
             f"DTSTART;TZID=Asia/Seoul:{fmt(start_dt)}",
             f"DTEND;TZID=Asia/Seoul:{fmt(end_dt)}",
             f"SUMMARY:{summary}",
             f"DESCRIPTION:예매 링크: {event.get('url', '')}",
             f"URL:{event.get('url', '')}",
             f"LOCATION:{theater_label}",
+            "SEQUENCE:0",
+            "STATUS:CONFIRMED",
+            "TRANSP:TRANSPARENT",
             "BEGIN:VALARM",
             "TRIGGER:-PT10M",
             "ACTION:DISPLAY",
