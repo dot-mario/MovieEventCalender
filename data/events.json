@@ -97,5 +97,14 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603136843",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0313/6e940d362bc6464ca0440c53e87242db.jpg",
     "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "lotte-201210016922014-24049",
+    "theater": "LOTTECINEMA",
+    "title": "우주 수호대: 하하하 행성의 대모험",
+    "startDate": "2026-03-19 16:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24049_201_1.jpg",
+    "category": "무비싸다구"
   }
 ]
