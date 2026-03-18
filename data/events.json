@@ -99,6 +99,15 @@
     "category": "서프라이즈쿠폰"
   },
   {
+    "id": "mega-20179",
+    "theater": "MEGABOX",
+    "title": "프로텍터",
+    "startDate": "2026-03-19 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20179",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/18/24lvgmiHTnkwgVC6ce6fiN1xg6aGJHaJ.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24049",
     "theater": "LOTTECINEMA",
     "title": "우주 수호대: 하하하 행성의 대모험",
