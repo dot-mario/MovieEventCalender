@@ -36,24 +36,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202603127127",
-    "theater": "CGV",
-    "title": "프로젝트 헤일메리",
-    "startDate": "2026-03-16 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603127127",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0312/a93f38ded0c548aa8701217e961fa139.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202603127038",
-    "theater": "CGV",
-    "title": "귀신 부르는 앱- 영",
-    "startDate": "2026-03-16 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603127038",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0313/1218b3b72613444b854f45c0c9577f0f.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "mega-20159",
     "theater": "MEGABOX",
     "title": "메소드연기",
@@ -61,15 +43,6 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20159",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/16/klSiEZFwh208bjGNhHFDcEZ3FNpm6hQN.jpg",
     "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202603136842",
-    "theater": "CGV",
-    "title": "메소드연기",
-    "startDate": "2026-03-17 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603136842",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0313/e7100df1aaaa4717a99133df7e882ec7.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "cgv-202603136948",
@@ -124,5 +97,32 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24022_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "cgv-202603197047",
+    "theater": "CGV",
+    "title": "김~치!",
+    "startDate": "2026-03-23 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603197047",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0319/56b4ec0ecf424f9c81b74912a66baebf.png",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202603196961",
+    "theater": "CGV",
+    "title": "펫 트레인",
+    "startDate": "2026-03-23 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603196961",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0319/20832221fada4388b84f7b317d916be2.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202603197141",
+    "theater": "CGV",
+    "title": "프로텍터",
+    "startDate": "2026-03-23 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603197141",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0319/5890eb82caab44b68342832cffffde35.jpg",
+    "category": "서프라이즈쿠폰"
   }
 ]
