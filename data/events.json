@@ -1,14 +1,5 @@
 [
   {
-    "id": "mega-20094",
-    "theater": "MEGABOX",
-    "title": "프로젝트 헤일메리",
-    "startDate": "2026-03-06 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20094",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/05/8go5mHTiErfFl8pltse5K3nMClxfkPzT.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "cgv-202603036625",
     "theater": "CGV",
     "title": "프로젝트 헤일메리",
@@ -25,15 +16,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24013_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "mega-20141",
-    "theater": "MEGABOX",
-    "title": "프로젝트 헤일메리",
-    "startDate": "2026-03-13 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20141",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/12/o2qpfnNlDKz8mPQ0VwaqWxW8mgSLyTgX.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24013",
@@ -54,15 +36,6 @@
     "category": "서프라이즈쿠폰"
   },
   {
-    "id": "mega-20159",
-    "theater": "MEGABOX",
-    "title": "메소드연기",
-    "startDate": "2026-03-17 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20159",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/16/klSiEZFwh208bjGNhHFDcEZ3FNpm6hQN.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "lotte-201210016922014-24018",
     "theater": "LOTTECINEMA",
     "title": "메소드연기",
@@ -70,15 +43,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24018_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "mega-20179",
-    "theater": "MEGABOX",
-    "title": "프로텍터",
-    "startDate": "2026-03-19 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20179",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/18/24lvgmiHTnkwgVC6ce6fiN1xg6aGJHaJ.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24049",
