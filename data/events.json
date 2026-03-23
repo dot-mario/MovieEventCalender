@@ -81,15 +81,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202603197047",
-    "theater": "CGV",
-    "title": "김~치!",
-    "startDate": "2026-03-23 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603197047",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0319/56b4ec0ecf424f9c81b74912a66baebf.png",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "cgv-202603196961",
     "theater": "CGV",
     "title": "펫 트레인",
@@ -108,6 +99,15 @@
     "category": "서프라이즈쿠폰"
   },
   {
+    "id": "cgv-202603207050",
+    "theater": "CGV",
+    "title": "네가 마지막으로 남긴 노래",
+    "startDate": "2026-03-24 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603207050",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0320/8c1b882e93e94b3596697fe4b7d6533a.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "cgv-202603206856",
     "theater": "CGV",
     "title": "폭탄",
@@ -115,6 +115,15 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603206856",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0320/1187941d1c6241359114ee237fcd469d.jpg",
     "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "mega-20211",
+    "theater": "MEGABOX",
+    "title": "네가 마지막으로 남긴 노래",
+    "startDate": "2026-03-24 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20211",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/23/MmQaHvoP2pgccrrrQ5cALcaWpbElgAK8.jpg",
+    "category": "빵원티켓"
   },
   {
     "id": "cgv-202603207150",
