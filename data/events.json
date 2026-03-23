@@ -9,15 +9,6 @@
     "category": "빵원티켓"
   },
   {
-    "id": "cgv-202603036625",
-    "theater": "CGV",
-    "title": "프로젝트 헤일메리",
-    "startDate": "2026-03-06 15:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603036625",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0303/4c542f18c99a43508c11fd58a1d51d1f.jpg",
-    "category": "스피드쿠폰"
-  },
-  {
     "id": "lotte-201210016922014-24013",
     "theater": "LOTTECINEMA",
     "title": "프로젝트 헤일메리",
@@ -43,15 +34,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24013_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "cgv-202603127127",
-    "theater": "CGV",
-    "title": "프로젝트 헤일메리",
-    "startDate": "2026-03-16 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603127127",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0312/a93f38ded0c548aa8701217e961fa139.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "mega-20159",
@@ -123,6 +105,24 @@
     "startDate": "2026-03-23 16:00:00",
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603197141",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0319/5890eb82caab44b68342832cffffde35.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202603206856",
+    "theater": "CGV",
+    "title": "폭탄",
+    "startDate": "2026-03-24 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603206856",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0320/1187941d1c6241359114ee237fcd469d.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202603207150",
+    "theater": "CGV",
+    "title": "삼악도",
+    "startDate": "2026-03-24 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603207150",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0320/fb1c7d5f793e476b99d481fc0b875042.jpg",
     "category": "서프라이즈쿠폰"
   }
 ]
