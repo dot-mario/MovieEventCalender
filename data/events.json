@@ -133,5 +133,14 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603207150",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0320/fb1c7d5f793e476b99d481fc0b875042.jpg",
     "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "lotte-201210016922014-24036",
+    "theater": "LOTTECINEMA",
+    "title": "네가 마지막으로 남긴 노래",
+    "startDate": "2026-03-25 11:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24036_201_1.jpg",
+    "category": "무비싸다구"
   }
 ]
