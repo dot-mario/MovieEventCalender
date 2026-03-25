@@ -97,5 +97,14 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24070_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "mega-20227",
+    "theater": "MEGABOX",
+    "title": "끝장수사",
+    "startDate": "2026-03-26 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20227",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/25/XoLUpJ3SuoK7cmwMZKZqjWLMU7DRWwCJ.jpg",
+    "category": "빵원티켓"
   }
 ]
