@@ -88,5 +88,14 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24036_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "lotte-201210016922014-24070",
+    "theater": "LOTTECINEMA",
+    "title": "끝장수사",
+    "startDate": "2026-03-26 14:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24070_201_1.jpg",
+    "category": "무비싸다구"
   }
 ]
