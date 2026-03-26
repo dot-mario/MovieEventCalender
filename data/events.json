@@ -18,15 +18,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202603196961",
-    "theater": "CGV",
-    "title": "펫 트레인",
-    "startDate": "2026-03-23 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603196961",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0319/20832221fada4388b84f7b317d916be2.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "cgv-202603197141",
     "theater": "CGV",
     "title": "프로텍터",
@@ -97,5 +88,14 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20227",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/25/XoLUpJ3SuoK7cmwMZKZqjWLMU7DRWwCJ.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "cgv-202603247161",
+    "theater": "CGV",
+    "title": "끝장수사",
+    "startDate": "2026-03-26 15:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603247161",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0324/23635c75a5274b7083f293700cb6b1cc.jpg",
+    "category": "스피드쿠폰"
   }
 ]
