@@ -99,6 +99,15 @@
     "category": "스피드쿠폰"
   },
   {
+    "id": "mega-20249",
+    "theater": "MEGABOX",
+    "title": "두 검사",
+    "startDate": "2026-03-30 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20249",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/27/qhe842gKSdDzIcYbZ1tdwUlJj6Dc1Xuq.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24142",
     "theater": "LOTTECINEMA",
     "title": "마법 숲 동물 친구들 대모험",
