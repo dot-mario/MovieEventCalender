@@ -97,5 +97,14 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603247161",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0324/23635c75a5274b7083f293700cb6b1cc.jpg",
     "category": "스피드쿠폰"
+  },
+  {
+    "id": "lotte-201210016922014-24142",
+    "theater": "LOTTECINEMA",
+    "title": "마법 숲 동물 친구들 대모험",
+    "startDate": "2026-03-30 14:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24142_201_1.jpg",
+    "category": "무비싸다구"
   }
 ]
