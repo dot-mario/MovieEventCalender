@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import EventCard from './components/EventCard';
 import TheaterFilter from './components/TheaterFilter';
 import type { MovieEvent, TheaterFilter as TheaterFilterType, SortMode } from './types';
+import CalendarView from './components/CalendarView';
 
 function App() {
   const [events, setEvents] = useState<MovieEvent[]>([]);
@@ -57,8 +58,8 @@ function App() {
         pa.push(e);
       }
     });
-    // 둘 다 최신순(내림차순)으로 정렬
-    up.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
+    // 다가오는 이벤트는 가까운 시간순(오름차순), 지난 이벤트는 최신순(내림차순)으로 정렬
+    up.sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
     pa.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
     return { upcoming: up, past: pa };
   }, [filtered, now]);
@@ -196,6 +197,16 @@ function App() {
                 >
                   🎬 영화별
                 </button>
+                <button
+                  onClick={() => setSortMode('calendar')}
+                  className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-all ${
+                    sortMode === 'calendar'
+                      ? 'bg-white/15 text-white'
+                      : 'text-gray-400 hover:text-white'
+                  }`}
+                >
+                  📅 달력
+                </button>
               </div>
             </div>
 
@@ -252,6 +263,11 @@ function App() {
                   </section>
                 ))}
               </div>
+            )}
+
+            {/* 달력 뷰 */}
+            {sortMode === 'calendar' && (
+              <CalendarView events={filtered} />
             )}
 
             {/* 데이터 없음 */}
