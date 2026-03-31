@@ -1,12 +1,12 @@
 [
   {
-    "id": "mega-20179",
-    "theater": "MEGABOX",
-    "title": "프로텍터",
-    "startDate": "2026-03-19 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20179",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/18/24lvgmiHTnkwgVC6ce6fiN1xg6aGJHaJ.jpg",
-    "category": "빵원티켓"
+    "id": "cgv-202603207050",
+    "theater": "CGV",
+    "title": "네가 마지막으로 남긴 노래",
+    "startDate": "2026-03-24 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603207050",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0320/8c1b882e93e94b3596697fe4b7d6533a.jpg",
+    "category": "서프라이즈쿠폰"
   },
   {
     "id": "mega-20211",
@@ -16,15 +16,6 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20211",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/23/MmQaHvoP2pgccrrrQ5cALcaWpbElgAK8.jpg",
     "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202603207150",
-    "theater": "CGV",
-    "title": "삼악도",
-    "startDate": "2026-03-24 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603207150",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0320/fb1c7d5f793e476b99d481fc0b875042.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24036",
