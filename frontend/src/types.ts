@@ -10,4 +10,4 @@ export interface MovieEvent {
 
 export type TheaterFilter = 'ALL' | 'CGV' | 'MEGABOX' | 'LOTTECINEMA';
 
-export type SortMode = 'time' | 'movie';
+export type SortMode = 'time' | 'movie' | 'calendar';
