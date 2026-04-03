@@ -90,15 +90,6 @@
     "category": "빵원티켓"
   },
   {
-    "id": "cgv-202603276873",
-    "theater": "CGV",
-    "title": "펫 트레인",
-    "startDate": "2026-03-31 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603276873",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0327/79e415719aaa41b19cd484ab90df1152.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "lotte-201210016922014-24022",
     "theater": "LOTTECINEMA",
     "title": "프로텍터",
@@ -132,6 +123,15 @@
     "startDate": "2026-04-06 14:00:00",
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604027177",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0402/60b6428b94344b8cb57cf34f9ca6bd56.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202604027178",
+    "theater": "CGV",
+    "title": "런닝맨-라이트&쉐도우",
+    "startDate": "2026-04-06 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604027178",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0402/55628cc17d524e96811ca1c48dde2954.jpg",
     "category": "서프라이즈쿠폰"
   }
 ]
