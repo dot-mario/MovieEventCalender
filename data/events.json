@@ -1,32 +1,5 @@
 [
   {
-    "id": "lotte-201210016922014-24070",
-    "theater": "LOTTECINEMA",
-    "title": "끝장수사",
-    "startDate": "2026-03-26 14:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24070_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
-    "id": "mega-20227",
-    "theater": "MEGABOX",
-    "title": "끝장수사",
-    "startDate": "2026-03-26 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20227",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/25/XoLUpJ3SuoK7cmwMZKZqjWLMU7DRWwCJ.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202603247161",
-    "theater": "CGV",
-    "title": "끝장수사",
-    "startDate": "2026-03-26 15:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603247161",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0324/23635c75a5274b7083f293700cb6b1cc.jpg",
-    "category": "스피드쿠폰"
-  },
-  {
     "id": "cgv-202603276974",
     "theater": "CGV",
     "title": "살목지",
@@ -61,6 +34,15 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20286",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/02/OAWIJl7mMV426pEsPpOGVweWVSps5bDJ.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "cgv-202604026994",
+    "theater": "CGV",
+    "title": "프로젝트 헤일메리",
+    "startDate": "2026-04-06 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604026994",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0402/8dfa2911a28f4eeda496682eb906801d.jpg",
+    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24013",
