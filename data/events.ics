@@ -15,13 +15,13 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:mega-20320-20260408T143000@movieeventcalendar
-DTSTAMP:20260408T114329
-DTSTART;TZID=Asia/Seoul:20260408T143000
-DTEND;TZID=Asia/Seoul:20260408T150000
-SUMMARY:[메가박스] 네가 마지막으로 남긴 노래 - 빵원티켓
-DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20320
-URL:https://megabox.co.kr/event/detail?eventNo=20320
+UID:mega-20324-20260409T143000@movieeventcalendar
+DTSTAMP:20260408T144934
+DTSTART;TZID=Asia/Seoul:20260409T143000
+DTEND;TZID=Asia/Seoul:20260409T150000
+SUMMARY:[메가박스] 크라임 101 - 빵원티켓
+DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20324
+URL:https://megabox.co.kr/event/detail?eventNo=20324
 LOCATION:메가박스
 SEQUENCE:0
 STATUS:CONFIRMED
