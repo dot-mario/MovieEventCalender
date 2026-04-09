@@ -1,14 +1,5 @@
 [
   {
-    "id": "cgv-202603276974",
-    "theater": "CGV",
-    "title": "살목지",
-    "startDate": "2026-03-31 10:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202603276974",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0327/b37a5e5889934b46948f776623cd5977.jpg",
-    "category": "스피드쿠폰"
-  },
-  {
     "id": "lotte-201210016922014-24050",
     "theater": "LOTTECINEMA",
     "title": "살목지",
@@ -42,6 +33,15 @@
     "startDate": "2026-04-06 12:00:00",
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604026994",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0402/8dfa2911a28f4eeda496682eb906801d.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202604027178",
+    "theater": "CGV",
+    "title": "런닝맨-라이트&쉐도우",
+    "startDate": "2026-04-06 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604027178",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0402/55628cc17d524e96811ca1c48dde2954.jpg",
     "category": "서프라이즈쿠폰"
   },
   {
