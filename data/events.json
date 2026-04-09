@@ -133,5 +133,14 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20324",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/08/t5AlpkZ4iUbvZ6vP3Jt9th23eQjJGKY2.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "mega-20348",
+    "theater": "MEGABOX",
+    "title": "누룩",
+    "startDate": "2026-04-10 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20348",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/09/R3qbpaLX4dbKPaQ01vdTh0AcZByZrZGG.jpg",
+    "category": "빵원티켓"
   }
 ]
