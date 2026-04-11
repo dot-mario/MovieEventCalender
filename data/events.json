@@ -9,6 +9,24 @@
     "category": "무비싸다구"
   },
   {
+    "id": "mega-20252",
+    "theater": "MEGABOX",
+    "title": "살목지",
+    "startDate": "2026-03-31 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20252",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/03/29/WItN9zxMnMf55cD9ucVJVtEbXip8koML.jpg",
+    "category": "빵원티켓"
+  },
+  {
+    "id": "mega-20286",
+    "theater": "MEGABOX",
+    "title": "크라임 101",
+    "startDate": "2026-04-03 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20286",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/02/OAWIJl7mMV426pEsPpOGVweWVSps5bDJ.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24013",
     "theater": "LOTTECINEMA",
     "title": "프로젝트 헤일메리",
@@ -16,6 +34,15 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202603/24013_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "mega-20300",
+    "theater": "MEGABOX",
+    "title": "내 이름은",
+    "startDate": "2026-04-07 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20300",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/06/O4NFbPuzkxuGCYnL5mpg08nJoU5Fm1VQ.jpg",
+    "category": "빵원티켓"
   },
   {
     "id": "cgv-202604037081",
@@ -27,6 +54,15 @@
     "category": "서프라이즈쿠폰"
   },
   {
+    "id": "mega-20301",
+    "theater": "MEGABOX",
+    "title": "미야자키 하야오의 그대들은 어떻게 살 것인가",
+    "startDate": "2026-04-07 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20301",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/06/p1woYSDLSDfllzY29gNa68Ccv4SrQppP.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "cgv-202604037180",
     "theater": "CGV",
     "title": "위 리브 인 타임",
@@ -36,6 +72,15 @@
     "category": "서프라이즈쿠폰"
   },
   {
+    "id": "mega-20303",
+    "theater": "MEGABOX",
+    "title": "프로젝트 헤일메리",
+    "startDate": "2026-04-07 16:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20303",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/06/lwQObzsKJpLc5O3q79UZgcaTBxBJZySo.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24036",
     "theater": "LOTTECINEMA",
     "title": "네가 마지막으로 남긴 노래",
@@ -43,6 +88,33 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24036_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "mega-20320",
+    "theater": "MEGABOX",
+    "title": "네가 마지막으로 남긴 노래",
+    "startDate": "2026-04-08 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20320",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/07/aM6761kJgMdRycw0iN6vUEzjLahfLWJy.jpg",
+    "category": "빵원티켓"
+  },
+  {
+    "id": "mega-20324",
+    "theater": "MEGABOX",
+    "title": "크라임 101",
+    "startDate": "2026-04-09 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20324",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/08/t5AlpkZ4iUbvZ6vP3Jt9th23eQjJGKY2.jpg",
+    "category": "빵원티켓"
+  },
+  {
+    "id": "mega-20348",
+    "theater": "MEGABOX",
+    "title": "누룩",
+    "startDate": "2026-04-10 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20348",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/09/R3qbpaLX4dbKPaQ01vdTh0AcZByZrZGG.jpg",
+    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24120",
