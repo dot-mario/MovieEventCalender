@@ -45,6 +45,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "cgv-202604037179",
+    "theater": "CGV",
+    "title": "쉘터",
+    "startDate": "2026-04-07 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604037179",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0403/9a6b29dcc70049edb0498706f535eee5.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "cgv-202604037081",
     "theater": "CGV",
     "title": "내 이름은",
@@ -61,15 +70,6 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20301",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/06/p1woYSDLSDfllzY29gNa68Ccv4SrQppP.jpg",
     "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202604037180",
-    "theater": "CGV",
-    "title": "위 리브 인 타임",
-    "startDate": "2026-04-07 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604037180",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0403/237cffa6eef145939776ec9858d20da8.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "mega-20303",
