@@ -135,6 +135,15 @@
     "category": "서프라이즈쿠폰"
   },
   {
+    "id": "mega-20368",
+    "theater": "MEGABOX",
+    "title": "힌드의 목소리",
+    "startDate": "2026-04-14 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20368",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/13/o8y2KVm0tzaBcR00vHulkCnobztp8z86.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "cgv-202604106904",
     "theater": "CGV",
     "title": "위 리브 인 타임",
@@ -151,6 +160,15 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24001_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "mega-20370",
+    "theater": "MEGABOX",
+    "title": "고트: 더 레전드",
+    "startDate": "2026-04-14 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20370",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/13/qmOKucjIHiW7tHWzZQe6xSVgGNF9BG08.jpg",
+    "category": "빵원티켓"
   },
   {
     "id": "cgv-202604107096",
