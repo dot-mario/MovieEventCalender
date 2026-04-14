@@ -160,5 +160,14 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604107096",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0410/2c0f512450424ecb84d2ae983599be4e.jpg",
     "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "mega-20390",
+    "theater": "MEGABOX",
+    "title": "짱구",
+    "startDate": "2026-04-15 16:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20390",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/14/m8YHXfnTT3HkxY2irm2uojW4utepoBwB.jpg",
+    "category": "빵원티켓"
   }
 ]
