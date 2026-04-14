@@ -119,12 +119,14 @@ def save_events_to_ics(events):
         summary = f"[{theater_label}] {event.get('title', '')} - {event.get('category', '')}"
 
         fmt = lambda d: d.strftime("%Y%m%dT%H%M%S")
-        now_str = now_kst.strftime("%Y%m%dT%H%M%S")
+        
+        # DTSTAMP가 매번 변경되는 것을 방지하기 위해 이벤트 시작 시간을 기준으로 고정값을 사용합니다.
+        stable_stamp = fmt(start_dt)
 
         lines.extend([
             "BEGIN:VEVENT",
             f"UID:{uid}",
-            f"DTSTAMP:{now_str}",
+            f"DTSTAMP:{stable_stamp}",
             f"DTSTART;TZID=Asia/Seoul:{fmt(start_dt)}",
             f"DTEND;TZID=Asia/Seoul:{fmt(end_dt)}",
             f"SUMMARY:{summary}",
