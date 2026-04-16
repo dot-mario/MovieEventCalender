@@ -117,6 +117,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "lotte-201210016922014-24036",
+    "theater": "LOTTECINEMA",
+    "title": "네가 마지막으로 남긴 노래",
+    "startDate": "2026-04-16 11:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24036_201_1.jpg",
+    "category": "무비싸다구"
+  },
+  {
     "id": "mega-20395",
     "theater": "MEGABOX",
     "title": "르누아르",
