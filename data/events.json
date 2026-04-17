@@ -36,24 +36,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202604097092",
-    "theater": "CGV",
-    "title": "힌드의 목소리",
-    "startDate": "2026-04-13 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604097092",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0409/9abdace0b1a94970b25fcb39da5d348a.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202604097190",
-    "theater": "CGV",
-    "title": "고트-더 레전드",
-    "startDate": "2026-04-13 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604097190",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0409/18700e94b69942388cbc0becbc772421.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "mega-20368",
     "theater": "MEGABOX",
     "title": "힌드의 목소리",
@@ -160,5 +142,23 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24172_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "cgv-202604167227",
+    "theater": "CGV",
+    "title": "내 이름은",
+    "startDate": "2026-04-20 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604167227",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0416/1d89511e009b4e459c9e38f270f70fa3.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202604167014",
+    "theater": "CGV",
+    "title": "줄무늬 파자마를 입은 소년",
+    "startDate": "2026-04-20 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604167014",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0416/15c5b8d4c60c4b858767eb781d122823.jpg",
+    "category": "서프라이즈쿠폰"
   }
 ]
