@@ -36,6 +36,15 @@
     "category": "무비싸다구"
   },
   {
+    "id": "cgv-202604097190",
+    "theater": "CGV",
+    "title": "고트-더 레전드",
+    "startDate": "2026-04-13 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604097190",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0409/18700e94b69942388cbc0becbc772421.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "mega-20368",
     "theater": "MEGABOX",
     "title": "힌드의 목소리",
@@ -43,15 +52,6 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20368",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/13/o8y2KVm0tzaBcR00vHulkCnobztp8z86.jpg",
     "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202604106904",
-    "theater": "CGV",
-    "title": "위 리브 인 타임",
-    "startDate": "2026-04-14 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604106904",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0410/9f7bbbf5c6864f9d973a98471e1a9b2c.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24001",
