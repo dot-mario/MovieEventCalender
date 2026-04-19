@@ -85,6 +85,8 @@ jobs:
           publish_dir: ./frontend/dist
           publish_branch: gh-pages
           force_orphan: false
+          user_name: 'github-actions[bot]'
+          user_email: '41898282+github-actions[bot]@users.noreply.github.com'
           commit_message: "Auto Update: Web App (Build)"
 
       - name: Deploy Data Only (Schedule)
@@ -96,4 +98,6 @@ jobs:
           destination_dir: data
           publish_branch: gh-pages
           keep_files: true
+          user_name: 'github-actions[bot]'
+          user_email: '41898282+github-actions[bot]@users.noreply.github.com'
           commit_message: "Auto Update: Movie Events Data"
