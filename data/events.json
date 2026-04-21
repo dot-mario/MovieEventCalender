@@ -1,50 +1,5 @@
 [
   {
-    "id": "mega-20300",
-    "theater": "MEGABOX",
-    "title": "내 이름은",
-    "startDate": "2026-04-07 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20300",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/06/O4NFbPuzkxuGCYnL5mpg08nJoU5Fm1VQ.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20301",
-    "theater": "MEGABOX",
-    "title": "미야자키 하야오의 그대들은 어떻게 살 것인가",
-    "startDate": "2026-04-07 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20301",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/06/p1woYSDLSDfllzY29gNa68Ccv4SrQppP.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20348",
-    "theater": "MEGABOX",
-    "title": "누룩",
-    "startDate": "2026-04-10 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20348",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/09/R3qbpaLX4dbKPaQ01vdTh0AcZByZrZGG.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "lotte-201210016922014-24120",
-    "theater": "LOTTECINEMA",
-    "title": "내 이름은",
-    "startDate": "2026-04-13 11:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24120_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
-    "id": "mega-20368",
-    "theater": "MEGABOX",
-    "title": "힌드의 목소리",
-    "startDate": "2026-04-14 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20368",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/13/o8y2KVm0tzaBcR00vHulkCnobztp8z86.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "mega-20370",
     "theater": "MEGABOX",
     "title": "고트: 더 레전드",
