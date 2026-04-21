@@ -187,5 +187,14 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20427",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/14/m8YHXfnTT3HkxY2irm2uojW4utepoBwB.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "mega-20442",
+    "theater": "MEGABOX",
+    "title": "크라임 101",
+    "startDate": "2026-04-22 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20442",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/21/hGeZwZm71alzRXCc4857Nl9v1hL9qGko.jpg",
+    "category": "빵원티켓"
   }
 ]
