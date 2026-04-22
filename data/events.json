@@ -151,5 +151,14 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20442",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/21/hGeZwZm71alzRXCc4857Nl9v1hL9qGko.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "lotte-201210016922014-24172",
+    "theater": "LOTTECINEMA",
+    "title": "짱구",
+    "startDate": "2026-04-23 14:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24172_201_1.jpg",
+    "category": "무비싸다구"
   }
 ]
