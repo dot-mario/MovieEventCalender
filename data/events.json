@@ -45,15 +45,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202604167014",
-    "theater": "CGV",
-    "title": "줄무늬 파자마를 입은 소년",
-    "startDate": "2026-04-20 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604167014",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0416/15c5b8d4c60c4b858767eb781d122823.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "mega-20425",
     "theater": "MEGABOX",
     "title": "미야자키 하야오의 그대들은 어떻게 살 것인가",
@@ -124,5 +115,14 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24172_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "cgv-202604237241",
+    "theater": "CGV",
+    "title": "내 이름은",
+    "startDate": "2026-04-27 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604237241",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0423/cafdc4fd58224a229b0675e8a7acb2c8.jpg",
+    "category": "서프라이즈쿠폰"
   }
 ]
