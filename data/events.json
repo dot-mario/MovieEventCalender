@@ -9,24 +9,6 @@
     "category": "스피드쿠폰"
   },
   {
-    "id": "mega-20390",
-    "theater": "MEGABOX",
-    "title": "짱구",
-    "startDate": "2026-04-15 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20390",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/14/m8YHXfnTT3HkxY2irm2uojW4utepoBwB.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20395",
-    "theater": "MEGABOX",
-    "title": "르누아르",
-    "startDate": "2026-04-16 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20395",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/14/QxvcXnXDNlbbxD4aiCUp6wZmXwKcEiS5.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "lotte-201210016922014-24172",
     "theater": "LOTTECINEMA",
     "title": "짱구",
@@ -43,15 +25,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24001_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "mega-20425",
-    "theater": "MEGABOX",
-    "title": "미야자키 하야오의 그대들은 어떻게 살 것인가",
-    "startDate": "2026-04-21 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20425",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/20/COdRirLo42ycRpSMiwOCUUosFVPHQ2Xu.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "cgv-202604177231",
@@ -88,24 +61,6 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604177204",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0417/1b5b123beb9348e49005f2fac0fd53e6.jpg",
     "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "mega-20427",
-    "theater": "MEGABOX",
-    "title": "짱구",
-    "startDate": "2026-04-21 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20427",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/14/m8YHXfnTT3HkxY2irm2uojW4utepoBwB.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20442",
-    "theater": "MEGABOX",
-    "title": "크라임 101",
-    "startDate": "2026-04-22 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20442",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/21/hGeZwZm71alzRXCc4857Nl9v1hL9qGko.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24172",
