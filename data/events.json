@@ -36,15 +36,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202604177112",
-    "theater": "CGV",
-    "title": "짱구",
-    "startDate": "2026-04-21 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604177112",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0417/32b7be31b0974a99badf8f2bb1245900.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "mega-20427",
     "theater": "MEGABOX",
     "title": "짱구",
@@ -124,6 +115,15 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20476",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/27/NZieKRjNXfxhUFx1qut2q8W3JiDfiJvy.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "cgv-202604247428",
+    "theater": "CGV",
+    "title": "살목지",
+    "startDate": "2026-04-28 15:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604247428",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0424/f1598f6793fd46a0bfdf9664541b2375.jpg",
+    "category": "스피드쿠폰"
   },
   {
     "id": "lotte-201210016922014-24172",
