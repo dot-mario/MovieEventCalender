@@ -1,14 +1,5 @@
 [
   {
-    "id": "cgv-202505164107",
-    "theater": "CGV",
-    "title": "내 차 보험료 조회하고 영화 1만원 할인쿠폰 받기!",
-    "startDate": "2024-01-01 23:59:59",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202505164107",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0310/1c917c987a8a47439747e98bc70e99a5.jpg",
-    "category": "쿠폰"
-  },
-  {
     "id": "mega-20427",
     "theater": "MEGABOX",
     "title": "짱구",
@@ -27,24 +18,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202604237241",
-    "theater": "CGV",
-    "title": "내 이름은",
-    "startDate": "2026-04-27 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604237241",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0423/cafdc4fd58224a229b0675e8a7acb2c8.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202604237242",
-    "theater": "CGV",
-    "title": "짱구",
-    "startDate": "2026-04-27 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604237242",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0423/4cbd12d02f2d4f2aa17a19483b549b95.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "lotte-201210016922014-14407",
     "theater": "LOTTECINEMA",
     "title": "마녀배달부 키키",
@@ -52,15 +25,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/201906/14407_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "cgv-202604247330",
-    "theater": "CGV",
-    "title": "기동전사 건담-섬광의 하사웨이 키르케의 마녀",
-    "startDate": "2026-04-28 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604247330",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0424/1fc2e72910ef4872ac93f9456bba80a9.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24141",
@@ -79,15 +43,6 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20476",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/27/NZieKRjNXfxhUFx1qut2q8W3JiDfiJvy.jpg",
     "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202604247428",
-    "theater": "CGV",
-    "title": "살목지",
-    "startDate": "2026-04-28 15:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604247428",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0424/f1598f6793fd46a0bfdf9664541b2375.jpg",
-    "category": "스피드쿠폰"
   },
   {
     "id": "lotte-201210016922014-24172",
