@@ -9,15 +9,6 @@
     "category": "빵원티켓"
   },
   {
-    "id": "lotte-201210016922014-24172",
-    "theater": "LOTTECINEMA",
-    "title": "짱구",
-    "startDate": "2026-04-23 14:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24172_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
     "id": "lotte-201210016922014-14407",
     "theater": "LOTTECINEMA",
     "title": "마녀배달부 키키",
