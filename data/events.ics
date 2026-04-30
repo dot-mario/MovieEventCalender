@@ -15,11 +15,11 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:lotte-201210016922014-24172-20260430T110000@movieeventcalendar
-DTSTAMP:20260430T110000
-DTSTART;TZID=Asia/Seoul:20260430T110000
-DTEND;TZID=Asia/Seoul:20260430T113000
-SUMMARY:[롯데시네마] 짱구 - 무비싸다구
+UID:lotte-201210016922014-24190-20260430T160000@movieeventcalendar
+DTSTAMP:20260430T160000
+DTSTART;TZID=Asia/Seoul:20260430T160000
+DTEND;TZID=Asia/Seoul:20260430T163000
+SUMMARY:[롯데시네마] 극장판 반짝반짝 달님이: 싱어롱 파티 - 무비싸다구
 DESCRIPTION:예매 링크: https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
 URL:https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
 LOCATION:롯데시네마
@@ -33,14 +33,14 @@ DESCRIPTION:이벤트 10분 전 알림
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:lotte-201210016922014-24190-20260430T160000@movieeventcalendar
-DTSTAMP:20260430T160000
-DTSTART;TZID=Asia/Seoul:20260430T160000
-DTEND;TZID=Asia/Seoul:20260430T163000
-SUMMARY:[롯데시네마] 극장판 반짝반짝 달님이: 싱어롱 파티 - 무비싸다구
-DESCRIPTION:예매 링크: https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
-URL:https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
-LOCATION:롯데시네마
+UID:mega-20519-20260504T143000@movieeventcalendar
+DTSTAMP:20260504T143000
+DTSTART;TZID=Asia/Seoul:20260504T143000
+DTEND;TZID=Asia/Seoul:20260504T150000
+SUMMARY:[메가박스] 짱구 - 빵원티켓
+DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20519
+URL:https://megabox.co.kr/event/detail?eventNo=20519
+LOCATION:메가박스
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
