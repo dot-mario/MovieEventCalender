@@ -1,14 +1,5 @@
 [
   {
-    "id": "mega-20477",
-    "theater": "MEGABOX",
-    "title": "짱구",
-    "startDate": "2026-04-28 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20477",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/14/m8YHXfnTT3HkxY2irm2uojW4utepoBwB.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "lotte-201210016922014-24191",
     "theater": "LOTTECINEMA",
     "title": "란 12.3",
@@ -18,24 +9,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "mega-20493",
-    "theater": "MEGABOX",
-    "title": "마녀배달부 키키",
-    "startDate": "2026-04-29 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20493",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/28/TAaeXGyNi2q7P2Djxgjdaf0lX1OY0bRF.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20494",
-    "theater": "MEGABOX",
-    "title": "란 12.3",
-    "startDate": "2026-04-29 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20494",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/28/Y3iSbOx6tbcwd8UEJXoKU0MhzmOBAPsi.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "lotte-201210016922014-24190",
     "theater": "LOTTECINEMA",
     "title": "극장판 반짝반짝 달님이: 싱어롱 파티",
@@ -43,23 +16,5 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24190_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "mega-20519",
-    "theater": "MEGABOX",
-    "title": "짱구",
-    "startDate": "2026-05-04 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20519",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/30/JtF5XzS3cKOgtaFXSYbkAcVnHQsEELPS.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20536",
-    "theater": "MEGABOX",
-    "title": "르누아르",
-    "startDate": "2026-05-06 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20536",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/04/lBEFGZN8EQNpeKHEOJVZ4LaKzUzq8Ppr.jpg",
-    "category": "빵원티켓"
   }
 ]
