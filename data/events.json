@@ -9,6 +9,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "mega-20536",
+    "theater": "MEGABOX",
+    "title": "르누아르",
+    "startDate": "2026-05-06 00:00:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20536",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/04/lBEFGZN8EQNpeKHEOJVZ4LaKzUzq8Ppr.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24141",
     "theater": "LOTTECINEMA",
     "title": "노멀",
@@ -16,15 +25,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202604/24141_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "mega-20536",
-    "theater": "MEGABOX",
-    "title": "르누아르",
-    "startDate": "2026-05-06 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20536",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/04/lBEFGZN8EQNpeKHEOJVZ4LaKzUzq8Ppr.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24172",
