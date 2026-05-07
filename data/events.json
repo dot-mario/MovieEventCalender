@@ -54,6 +54,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "lotte-201210016922014-24190",
+    "theater": "LOTTECINEMA",
+    "title": "극장판 반짝반짝 달님이: 싱어롱 파티",
+    "startDate": "2026-05-08 11:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24190_201_1.jpg",
+    "category": "무비싸다구"
+  },
+  {
     "id": "mega-20555",
     "theater": "MEGABOX",
     "title": "르누아르",
