@@ -1,14 +1,5 @@
 [
   {
-    "id": "mega-20519",
-    "theater": "MEGABOX",
-    "title": "짱구",
-    "startDate": "2026-05-04 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20519",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/04/30/JtF5XzS3cKOgtaFXSYbkAcVnHQsEELPS.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "lotte-201210016922014-24141",
     "theater": "LOTTECINEMA",
     "title": "노멀",
