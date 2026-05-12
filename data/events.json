@@ -1,5 +1,23 @@
 [
   {
+    "id": "cgv-202505164107",
+    "theater": "CGV",
+    "title": "내 차 보험료 조회하고 영화 1만원 할인쿠폰 받기!",
+    "startDate": "2024-01-01 23:59:59",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202505164107",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0310/1c917c987a8a47439747e98bc70e99a5.jpg",
+    "category": "쿠폰"
+  },
+  {
+    "id": "cgv-202604307341",
+    "theater": "CGV",
+    "title": "교생실습",
+    "startDate": "2026-05-04 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202604307341",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0430/accd06b06a784e6d9a30c026c84ebb99.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "lotte-201210016922014-24141",
     "theater": "LOTTECINEMA",
     "title": "노멀",
@@ -61,5 +79,32 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20555",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/07/gnUV4vSWwNG6m0IqpZJ5SWJa2AIr2uLK.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "cgv-202605077730",
+    "theater": "CGV",
+    "title": "교생실습",
+    "startDate": "2026-05-11 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605077730",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0507/1d09c78986d54dd8b756bc21a045e0d5.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202605077830",
+    "theater": "CGV",
+    "title": "란 12.3",
+    "startDate": "2026-05-11 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605077830",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0507/1675f8e685f64416b21ac3ecf3661891.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202605077831",
+    "theater": "CGV",
+    "title": "짱구",
+    "startDate": "2026-05-11 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605077831",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0507/a266a26a0b2d4a5284df436970119457.jpg",
+    "category": "서프라이즈쿠폰"
   }
 ]
