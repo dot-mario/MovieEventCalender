@@ -1,5 +1,14 @@
 [
   {
+    "id": "mega-20547",
+    "theater": "MEGABOX",
+    "title": "피어스",
+    "startDate": "2026-05-07 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20547",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/06/KkZVdMrEKfm5KHP77EJ8qXoC7c7RFtmQ.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24190",
     "theater": "LOTTECINEMA",
     "title": "극장판 반짝반짝 달님이: 싱어롱 파티",
@@ -7,5 +16,14 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24190_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "mega-20611",
+    "theater": "MEGABOX",
+    "title": "백룸",
+    "startDate": "2026-05-18 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20611",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/15/upE7Cw3k2RUyW0T3DC4be84y6cDMNluu.jpg",
+    "category": "빵원티켓"
   }
 ]
