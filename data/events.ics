@@ -15,13 +15,13 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:mega-20611-20260518T113000@movieeventcalendar
-DTSTAMP:20260518T113000
-DTSTART;TZID=Asia/Seoul:20260518T113000
-DTEND;TZID=Asia/Seoul:20260518T120000
-SUMMARY:[메가박스] 백룸 - 빵원티켓
-DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20611
-URL:https://megabox.co.kr/event/detail?eventNo=20611
+UID:mega-20620-20260519T113000@movieeventcalendar
+DTSTAMP:20260519T113000
+DTSTART;TZID=Asia/Seoul:20260519T113000
+DTEND;TZID=Asia/Seoul:20260519T120000
+SUMMARY:[메가박스] 이상한 과자 가게 전천당 - 빵원티켓
+DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20620
+URL:https://megabox.co.kr/event/detail?eventNo=20620
 LOCATION:메가박스
 SEQUENCE:0
 STATUS:CONFIRMED
