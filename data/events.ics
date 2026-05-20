@@ -15,14 +15,14 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:mega-20630-20260520T163000@movieeventcalendar
-DTSTAMP:20260520T163000
-DTSTART;TZID=Asia/Seoul:20260520T163000
-DTEND;TZID=Asia/Seoul:20260520T170000
-SUMMARY:[메가박스] 와일드 씽 - 빵원티켓
-DESCRIPTION:예매 링크: https://megabox.co.kr/event/detail?eventNo=20630
-URL:https://megabox.co.kr/event/detail?eventNo=20630
-LOCATION:메가박스
+UID:lotte-201210016922014-24314-20260521T160000@movieeventcalendar
+DTSTAMP:20260521T160000
+DTSTART;TZID=Asia/Seoul:20260521T160000
+DTEND;TZID=Asia/Seoul:20260521T163000
+SUMMARY:[롯데시네마] 백룸 - 무비싸다구
+DESCRIPTION:예매 링크: https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+URL:https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+LOCATION:롯데시네마
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
