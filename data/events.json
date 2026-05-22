@@ -45,6 +45,15 @@
     "category": "무비싸다구"
   },
   {
+    "id": "mega-20647",
+    "theater": "MEGABOX",
+    "title": "로메리아",
+    "startDate": "2026-05-26 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20647",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/22/LdMCL8P1ZC19HJCoZGVNHdJV5Cozkc6j.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24318",
     "theater": "LOTTECINEMA",
     "title": "로메리아",
