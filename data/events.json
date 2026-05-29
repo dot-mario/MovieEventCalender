@@ -117,6 +117,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "mega-20693",
+    "theater": "MEGABOX",
+    "title": "만달로리안과 그로구",
+    "startDate": "2026-06-01 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20693",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/29/YGlQHm49riYqTfiA6dbsRsFX77jUPKOF.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "mega-20684",
     "theater": "MEGABOX",
     "title": "군체",
