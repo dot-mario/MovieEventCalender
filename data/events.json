@@ -1,14 +1,5 @@
 [
   {
-    "id": "mega-20611",
-    "theater": "MEGABOX",
-    "title": "백룸",
-    "startDate": "2026-05-18 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20611",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/15/upE7Cw3k2RUyW0T3DC4be84y6cDMNluu.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "mega-20620",
     "theater": "MEGABOX",
     "title": "이상한 과자 가게 전천당",
@@ -141,6 +132,33 @@
     "startDate": "2026-06-01 16:30:00",
     "url": "https://megabox.co.kr/event/detail?eventNo=20684",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/29/LJqEw9lFU4axETCe72HdFLQchl3ioCX0.jpg",
+    "category": "빵원티켓"
+  },
+  {
+    "id": "mega-20695",
+    "theater": "MEGABOX",
+    "title": "디스클로저 데이",
+    "startDate": "2026-06-02 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20695",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/01/a6qnSeU4k8QuWcomgDUiS40UKLnZQnjR.jpg",
+    "category": "빵원티켓"
+  },
+  {
+    "id": "mega-20696",
+    "theater": "MEGABOX",
+    "title": "마스터즈 오브 유니버스",
+    "startDate": "2026-06-02 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20696",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/01/h9XvHcCv8xRVFxNwopxNunK46ZjGN53E.jpg",
+    "category": "빵원티켓"
+  },
+  {
+    "id": "mega-20697",
+    "theater": "MEGABOX",
+    "title": "상자 속의 양",
+    "startDate": "2026-06-02 16:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20697",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/01/iWOmC3RyFfHs9aG2oRx8ubWUvyJFopY9.jpg",
     "category": "빵원티켓"
   }
 ]
