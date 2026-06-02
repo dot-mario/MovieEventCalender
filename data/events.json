@@ -1,5 +1,14 @@
 [
   {
+    "id": "cgv-202505164107",
+    "theater": "CGV",
+    "title": "내 차 보험료 조회하고 영화 1만원 할인쿠폰 받기!",
+    "startDate": "2024-01-01 23:59:59",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202505164107",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0310/1c917c987a8a47439747e98bc70e99a5.jpg",
+    "category": "쿠폰"
+  },
+  {
     "id": "lotte-201210016922014-24235",
     "theater": "LOTTECINEMA",
     "title": "와일드 씽",
@@ -99,6 +108,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "cgv-202605288652",
+    "theater": "CGV",
+    "title": "만달로리안과 그로구",
+    "startDate": "2026-06-01 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605288652",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0528/4ea2ac1d67d5417596bf55eb08a877d1.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "lotte-201210016922014-24314",
     "theater": "LOTTECINEMA",
     "title": "백룸",
@@ -126,6 +144,24 @@
     "category": "빵원티켓"
   },
   {
+    "id": "cgv-202605298654",
+    "theater": "CGV",
+    "title": "마스터즈 오브 유니버스",
+    "startDate": "2026-06-02 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605298654",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0529/bec74d83c5a4483b88b5dad1fb2242e5.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202605298655",
+    "theater": "CGV",
+    "title": "뒷자리에 태워줘",
+    "startDate": "2026-06-02 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605298655",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0529/616a9da3a1674e7db70a30053bc51046.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "mega-20696",
     "theater": "MEGABOX",
     "title": "마스터즈 오브 유니버스",
@@ -133,6 +169,15 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20696",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/01/h9XvHcCv8xRVFxNwopxNunK46ZjGN53E.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "cgv-202605298658",
+    "theater": "CGV",
+    "title": "돌핀보이-푸른 바다의 수호자",
+    "startDate": "2026-06-02 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605298658",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0529/a1b643ff9c4c454ebbac7f6c3b58153f.jpg",
+    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24368",
