@@ -5,6 +5,11 @@ import json
 import re  # 정규식 모듈 추가
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
+# 윈도우 환경에서 콘솔 출력(이모지 등) 인코딩 에러 방지
+if sys.platform == 'win32' and hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
+
 # 단독 실행 시 모듈 경로 인식 에러 방지용
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -52,6 +57,13 @@ def get_cgv_coupons():
             }
         )
         page = context.new_page()
+        
+        # 봇 탐지 우회를 위한 navigator.webdriver 숨김 설정
+        page.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined
+            });
+        """)
         
         intercepted_events = []
         

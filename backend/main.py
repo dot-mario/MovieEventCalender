@@ -5,6 +5,11 @@ import time
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
 
+# 윈도우 환경에서 콘솔 출력(이모지 등) 인코딩 에러 방지
+if sys.platform == 'win32' and hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
+
 # 크롤러 모듈 임포트
 from crawlers.cgv import get_cgv_coupons
 from crawlers.lottecinema import get_lottecinema_moviesadagu
