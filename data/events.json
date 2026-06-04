@@ -18,24 +18,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "lotte-201210016922014-24330",
-    "theater": "LOTTECINEMA",
-    "title": "이상한 과자 가게 전천당",
-    "startDate": "2026-05-27 16:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24330_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
-    "id": "lotte-201210016922014-24314",
-    "theater": "LOTTECINEMA",
-    "title": "백룸",
-    "startDate": "2026-05-29 11:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24314_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
     "id": "lotte-201210016922014-24110",
     "theater": "LOTTECINEMA",
     "title": "군체",
@@ -43,15 +25,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24110_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "cgv-202605288652",
-    "theater": "CGV",
-    "title": "만달로리안과 그로구",
-    "startDate": "2026-06-01 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605288652",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0528/4ea2ac1d67d5417596bf55eb08a877d1.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24314",
@@ -133,5 +106,14 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24318_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "cgv-202606048463",
+    "theater": "CGV",
+    "title": "싱 스트리트",
+    "startDate": "2026-06-08 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606048463",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0604/04b2e7f232a2437f934f95214757efba.jpg",
+    "category": "서프라이즈쿠폰"
   }
 ]
