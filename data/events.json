@@ -36,15 +36,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202605298654",
-    "theater": "CGV",
-    "title": "마스터즈 오브 유니버스",
-    "startDate": "2026-06-02 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605298654",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0529/bec74d83c5a4483b88b5dad1fb2242e5.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "cgv-202605298655",
     "theater": "CGV",
     "title": "뒷자리에 태워줘",
@@ -108,12 +99,30 @@
     "category": "무비싸다구"
   },
   {
+    "id": "lotte-201210016922014-24235",
+    "theater": "LOTTECINEMA",
+    "title": "와일드 씽",
+    "startDate": "2026-06-05 17:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202606/24235_201_1.jpg",
+    "category": "무비싸다구"
+  },
+  {
     "id": "cgv-202606048463",
     "theater": "CGV",
     "title": "싱 스트리트",
     "startDate": "2026-06-08 12:00:00",
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606048463",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0604/04b2e7f232a2437f934f95214757efba.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202606048571",
+    "theater": "CGV",
+    "title": "울프 토템",
+    "startDate": "2026-06-08 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606048571",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0604/c0ed2987b1a54311964fde3783b1c793.jpg",
     "category": "서프라이즈쿠폰"
   }
 ]
