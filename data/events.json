@@ -27,24 +27,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "mega-20683",
-    "theater": "MEGABOX",
-    "title": "파이널 피스",
-    "startDate": "2026-06-01 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20683",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/29/7GtoXBc6rk1jHtnr9dMpNyg2e3NrDGeb.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20693",
-    "theater": "MEGABOX",
-    "title": "만달로리안과 그로구",
-    "startDate": "2026-06-01 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20693",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/29/YGlQHm49riYqTfiA6dbsRsFX77jUPKOF.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "lotte-201210016922014-24314",
     "theater": "LOTTECINEMA",
     "title": "백룸",
@@ -54,24 +36,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "mega-20684",
-    "theater": "MEGABOX",
-    "title": "군체",
-    "startDate": "2026-06-01 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20684",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/29/LJqEw9lFU4axETCe72HdFLQchl3ioCX0.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20695",
-    "theater": "MEGABOX",
-    "title": "디스클로저 데이",
-    "startDate": "2026-06-02 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20695",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/01/a6qnSeU4k8QuWcomgDUiS40UKLnZQnjR.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "cgv-202605298655",
     "theater": "CGV",
     "title": "뒷자리에 태워줘",
@@ -79,15 +43,6 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605298655",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0529/616a9da3a1674e7db70a30053bc51046.jpg",
     "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "mega-20696",
-    "theater": "MEGABOX",
-    "title": "마스터즈 오브 유니버스",
-    "startDate": "2026-06-02 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20696",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/01/h9XvHcCv8xRVFxNwopxNunK46ZjGN53E.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "cgv-202605298658",
@@ -108,15 +63,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "mega-20697",
-    "theater": "MEGABOX",
-    "title": "상자 속의 양",
-    "startDate": "2026-06-02 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20697",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/01/iWOmC3RyFfHs9aG2oRx8ubWUvyJFopY9.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "lotte-201210016922014-23843",
     "theater": "LOTTECINEMA",
     "title": "디스클로저 데이",
@@ -124,24 +70,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202606/23843_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "mega-20719",
-    "theater": "MEGABOX",
-    "title": "백룸",
-    "startDate": "2026-06-04 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20719",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/05/15/upE7Cw3k2RUyW0T3DC4be84y6cDMNluu.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20720",
-    "theater": "MEGABOX",
-    "title": "이상한 과자 가게 전천당",
-    "startDate": "2026-06-04 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20720",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/02/XjLtaUYEnfC7hsW86b5GUhFvWIfsoHgE.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24345",
@@ -153,15 +81,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "mega-20730",
-    "theater": "MEGABOX",
-    "title": "울프 토템",
-    "startDate": "2026-06-05 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20730",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/04/OTzjKcfez81hcEGnl82vb7dEPCfzwify.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "lotte-201210016922014-24330",
     "theater": "LOTTECINEMA",
     "title": "이상한 과자 가게 전천당",
@@ -169,15 +88,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24330_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "mega-20741",
-    "theater": "MEGABOX",
-    "title": "와일드 씽",
-    "startDate": "2026-06-05 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20741",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/05/Wt1KwyGU5HlwZa118uHkltNBhcX28Lx5.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24318",
