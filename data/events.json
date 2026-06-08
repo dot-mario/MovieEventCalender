@@ -1,14 +1,5 @@
 [
   {
-    "id": "cgv-202505164107",
-    "theater": "CGV",
-    "title": "내 차 보험료 조회하고 영화 1만원 할인쿠폰 받기!",
-    "startDate": "2024-01-01 23:59:59",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202505164107",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0310/1c917c987a8a47439747e98bc70e99a5.jpg",
-    "category": "쿠폰"
-  },
-  {
     "id": "lotte-201210016922014-24235",
     "theater": "LOTTECINEMA",
     "title": "와일드 씽",
@@ -16,24 +7,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202606/24235_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "cgv-202605298654",
-    "theater": "CGV",
-    "title": "마스터즈 오브 유니버스",
-    "startDate": "2026-06-02 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605298654",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0529/bec74d83c5a4483b88b5dad1fb2242e5.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202605298658",
-    "theater": "CGV",
-    "title": "돌핀보이-푸른 바다의 수호자",
-    "startDate": "2026-06-02 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202605298658",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0529/a1b643ff9c4c454ebbac7f6c3b58153f.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24368",
@@ -90,21 +63,48 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202606048463",
-    "theater": "CGV",
-    "title": "싱 스트리트",
-    "startDate": "2026-06-08 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606048463",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0604/04b2e7f232a2437f934f95214757efba.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "cgv-202606048571",
     "theater": "CGV",
     "title": "울프 토템",
     "startDate": "2026-06-08 14:00:00",
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606048571",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0604/c0ed2987b1a54311964fde3783b1c793.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202606048763",
+    "theater": "CGV",
+    "title": "백룸",
+    "startDate": "2026-06-08 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606048763",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0604/6e172f8bf5194223bda30991b54b73d5.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202606058383",
+    "theater": "CGV",
+    "title": "뒷자리에 태워줘",
+    "startDate": "2026-06-09 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606058383",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0605/de15399d84ca41ce9aad756a389ccee7.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202606058764",
+    "theater": "CGV",
+    "title": "순례자들은 왜 돌아오지 않는가",
+    "startDate": "2026-06-09 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606058764",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0605/cd1f23f3916e4b65ae9a1b33513a0a62.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202606058468",
+    "theater": "CGV",
+    "title": "상자 속의 양",
+    "startDate": "2026-06-09 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606058468",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0605/a2f69ecb68104332b3acd3d5c75acea2.jpg",
     "category": "서프라이즈쿠폰"
   }
 ]
