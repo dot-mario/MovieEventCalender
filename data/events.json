@@ -27,15 +27,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202606048763",
-    "theater": "CGV",
-    "title": "백룸",
-    "startDate": "2026-06-08 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606048763",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0604/6e172f8bf5194223bda30991b54b73d5.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "cgv-202606058383",
     "theater": "CGV",
     "title": "뒷자리에 태워줘",
@@ -60,6 +51,15 @@
     "startDate": "2026-06-09 16:00:00",
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606058468",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0605/a2f69ecb68104332b3acd3d5c75acea2.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202606118595",
+    "theater": "CGV",
+    "title": "너바나 더 밴드-전설적 밴드 너바나와는 별 관련 없는 너바나 더 밴드의 콤",
+    "startDate": "2026-06-15 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606118595",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0611/17d132684c3647bb8c2ab65077eb9fe7.jpg",
     "category": "서프라이즈쿠폰"
   }
 ]
