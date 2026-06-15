@@ -27,15 +27,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202606058468",
-    "theater": "CGV",
-    "title": "상자 속의 양",
-    "startDate": "2026-06-09 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606058468",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0605/a2f69ecb68104332b3acd3d5c75acea2.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "cgv-202606118595",
     "theater": "CGV",
     "title": "너바나 더 밴드-전설적 밴드 너바나와는 별 관련 없는 너바나 더 밴드의 콤",
@@ -60,6 +51,15 @@
     "startDate": "2026-06-15 16:00:00",
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606118777",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0611/4c2a7cef8b844c628e982b6236bc3dda.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202606128782",
+    "theater": "CGV",
+    "title": "와일드 씽",
+    "startDate": "2026-06-16 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606128782",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0612/5e2fc41af3ca43738a26ef806098edab.jpg",
     "category": "서프라이즈쿠폰"
   }
 ]
