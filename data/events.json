@@ -9,33 +9,6 @@
     "category": "쿠폰"
   },
   {
-    "id": "cgv-202606118777",
-    "theater": "CGV",
-    "title": "신사-악귀의 속삭임",
-    "startDate": "2026-06-15 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606118777",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0611/4c2a7cef8b844c628e982b6236bc3dda.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202606128782",
-    "theater": "CGV",
-    "title": "와일드 씽",
-    "startDate": "2026-06-16 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606128782",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0612/5e2fc41af3ca43738a26ef806098edab.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202606128783",
-    "theater": "CGV",
-    "title": "상자 속의 양",
-    "startDate": "2026-06-16 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606128783",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0615/c47bb08f7ee9481fab7fc87f33e0512e.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "cgv-202606128598",
     "theater": "CGV",
     "title": "눈동자",
@@ -88,5 +61,32 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202606/24385_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "cgv-202606178610",
+    "theater": "CGV",
+    "title": "너만 보이는 날",
+    "startDate": "2026-06-22 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606178610",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0618/52802a798843452cb29ecc9dde337426.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202606188494",
+    "theater": "CGV",
+    "title": "레디 오어 낫-죽음의 숨바꼭질",
+    "startDate": "2026-06-22 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606188494",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0619/17c4de014b25410a943b2deda9302a21.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "cgv-202606188423",
+    "theater": "CGV",
+    "title": "신사-악귀의 속삭임",
+    "startDate": "2026-06-22 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606188423",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0618/be70981d487040da897c55f873f38a7d.jpg",
+    "category": "서프라이즈쿠폰"
   }
 ]
