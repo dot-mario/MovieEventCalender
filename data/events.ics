@@ -15,14 +15,14 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:cgv-202606188800-20260622T150000@movieeventcalendar
-DTSTAMP:20260622T150000
-DTSTART;TZID=Asia/Seoul:20260622T150000
-DTEND;TZID=Asia/Seoul:20260622T153000
-SUMMARY:[CGV] 슈퍼걸 - 스피드쿠폰
-DESCRIPTION:예매 링크: https://cgv.co.kr/evt/eventDetail?evntNo=202606188800
-URL:https://cgv.co.kr/evt/eventDetail?evntNo=202606188800
-LOCATION:CGV
+UID:lotte-201210016922014-23568-20260623T110000@movieeventcalendar
+DTSTAMP:20260623T110000
+DTSTART;TZID=Asia/Seoul:20260623T110000
+DTEND;TZID=Asia/Seoul:20260623T113000
+SUMMARY:[롯데시네마] 너만 보이는 날 - 무비싸다구
+DESCRIPTION:예매 링크: https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+URL:https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+LOCATION:롯데시네마
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -59,6 +59,24 @@ SUMMARY:[CGV] 너바나 더 밴드-전설적 밴드 너바나와는 별 관련 �
 DESCRIPTION:예매 링크: https://cgv.co.kr/evt/eventDetail?evntNo=202606198501
 URL:https://cgv.co.kr/evt/eventDetail?evntNo=202606198501
 LOCATION:CGV
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:이벤트 10분 전 알림
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lotte-201210016922014-24235-20260623T140000@movieeventcalendar
+DTSTAMP:20260623T140000
+DTSTART;TZID=Asia/Seoul:20260623T140000
+DTEND;TZID=Asia/Seoul:20260623T143000
+SUMMARY:[롯데시네마] 와일드 씽 - 무비싸다구
+DESCRIPTION:예매 링크: https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+URL:https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014
+LOCATION:롯데시네마
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT

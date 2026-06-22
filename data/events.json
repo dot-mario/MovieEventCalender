@@ -1,5 +1,23 @@
 [
   {
+    "id": "mega-20783",
+    "theater": "MEGABOX",
+    "title": "슈퍼걸",
+    "startDate": "2026-06-15 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20783",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/12/gbl9AfG5rlmAncgtP80OpiBYSsoV70lb.jpg",
+    "category": "빵원티켓"
+  },
+  {
+    "id": "mega-20784",
+    "theater": "MEGABOX",
+    "title": "짝사랑 세계",
+    "startDate": "2026-06-15 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20784",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/12/dwQ5RtM2x9NqpUY8w8BSQ26QQeu4QcQW.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24235",
     "theater": "LOTTECINEMA",
     "title": "와일드 씽",
@@ -9,6 +27,15 @@
     "category": "무비싸다구"
   },
   {
+    "id": "mega-20800",
+    "theater": "MEGABOX",
+    "title": "상자 속의 양",
+    "startDate": "2026-06-17 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20800",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/16/RMNlEyX4vqkB6HfLeyP2i1MD5TOnOSiL.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24345",
     "theater": "LOTTECINEMA",
     "title": "상자 속의 양",
@@ -16,6 +43,15 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202606/24345_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "mega-20801",
+    "theater": "MEGABOX",
+    "title": "눈동자",
+    "startDate": "2026-06-17 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20801",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/16/TOxSMsWKEv5pXdeJGJS58b4EyUM3Vc5N.jpg",
+    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24228",
@@ -45,6 +81,15 @@
     "category": "무비싸다구"
   },
   {
+    "id": "mega-20809",
+    "theater": "MEGABOX",
+    "title": "너만 보이는 날",
+    "startDate": "2026-06-19 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20809",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/18/SaYC6DxVBe8jQqqdrb0aWk8M8gIa9gQz.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "cgv-202606178609",
     "theater": "CGV",
     "title": "마티 슈프림",
@@ -54,6 +99,15 @@
     "category": "스피드쿠폰"
   },
   {
+    "id": "mega-20818",
+    "theater": "MEGABOX",
+    "title": "사무라이 타임슬리퍼",
+    "startDate": "2026-06-22 14:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20818",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/19/EiNABk0G74g7olKoUcDNx1LRvoqlwe6W.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "cgv-202606188800",
     "theater": "CGV",
     "title": "슈퍼걸",
@@ -61,6 +115,15 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606188800",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0619/054a4673c35048738fba2cfcdb793a46.jpg",
     "category": "스피드쿠폰"
+  },
+  {
+    "id": "lotte-201210016922014-23568",
+    "theater": "LOTTECINEMA",
+    "title": "너만 보이는 날",
+    "startDate": "2026-06-23 11:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202511/23568_201_1.jpg",
+    "category": "무비싸다구"
   },
   {
     "id": "cgv-202606198427",
@@ -79,6 +142,15 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606198501",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0619/a33e90fd89474a00b33bcd1b2f66beae.jpg",
     "category": "서프라이즈쿠폰"
+  },
+  {
+    "id": "lotte-201210016922014-24235",
+    "theater": "LOTTECINEMA",
+    "title": "와일드 씽",
+    "startDate": "2026-06-23 14:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202606/24235_201_1.jpg",
+    "category": "무비싸다구"
   },
   {
     "id": "cgv-202606198502",
