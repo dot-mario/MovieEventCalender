@@ -54,6 +54,15 @@
     "category": "스피드쿠폰"
   },
   {
+    "id": "cgv-202606188494",
+    "theater": "CGV",
+    "title": "레디 오어 낫-죽음의 숨바꼭질",
+    "startDate": "2026-06-22 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606188494",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0619/17c4de014b25410a943b2deda9302a21.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "cgv-202606188800",
     "theater": "CGV",
     "title": "슈퍼걸",
@@ -63,6 +72,15 @@
     "category": "스피드쿠폰"
   },
   {
+    "id": "cgv-202606188423",
+    "theater": "CGV",
+    "title": "신사-악귀의 속삭임",
+    "startDate": "2026-06-22 16:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606188423",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0618/be70981d487040da897c55f873f38a7d.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "lotte-201210016922014-23568",
     "theater": "LOTTECINEMA",
     "title": "너만 보이는 날",
@@ -70,24 +88,6 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202511/23568_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "cgv-202606198427",
-    "theater": "CGV",
-    "title": "와일드 씽",
-    "startDate": "2026-06-23 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606198427",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0619/32dff719e62646c58380b8abb760ebf5.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202606198501",
-    "theater": "CGV",
-    "title": "너바나 더 밴드-전설적 밴드 너바나와는 별 관련 없는 너바나 더 밴드의 콤",
-    "startDate": "2026-06-23 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606198501",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0619/a33e90fd89474a00b33bcd1b2f66beae.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24235",
