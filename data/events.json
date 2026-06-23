@@ -1,23 +1,5 @@
 [
   {
-    "id": "lotte-201210016922014-24235",
-    "theater": "LOTTECINEMA",
-    "title": "와일드 씽",
-    "startDate": "2026-06-17 11:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202606/24235_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
-    "id": "lotte-201210016922014-24345",
-    "theater": "LOTTECINEMA",
-    "title": "상자 속의 양",
-    "startDate": "2026-06-17 14:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202606/24345_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
     "id": "lotte-201210016922014-24228",
     "theater": "LOTTECINEMA",
     "title": "슈퍼걸",
