@@ -81,15 +81,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "cgv-202606198502",
-    "theater": "CGV",
-    "title": "눈동자",
-    "startDate": "2026-06-23 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606198502",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0619/b0e3e58490ec495e98d731b26a03d434.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "lotte-201210016922014-24385",
     "theater": "LOTTECINEMA",
     "title": "눈동자",
@@ -106,6 +97,15 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202607/24420_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "cgv-202606268820",
+    "theater": "CGV",
+    "title": "그린랜드 2-마이그레이션",
+    "startDate": "2026-06-29 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606268820",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0626/7cf0f7be71964eecad9c5be7dc40433d.jpg",
+    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24418",
