@@ -99,15 +99,6 @@
     "category": "스피드쿠폰"
   },
   {
-    "id": "cgv-202606188423",
-    "theater": "CGV",
-    "title": "신사-악귀의 속삭임",
-    "startDate": "2026-06-22 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606188423",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0618/be70981d487040da897c55f873f38a7d.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "lotte-201210016922014-23568",
     "theater": "LOTTECINEMA",
     "title": "너만 보이는 날",
@@ -160,6 +151,15 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20850",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/26/c4c1sNXUDIPWZZe0QoszKnTBOkOSrnVA.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "cgv-202606268632",
+    "theater": "CGV",
+    "title": "그림자 아이",
+    "startDate": "2026-06-29 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606268632",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0626/007013752897485f9ea6b22fddf6dc9a.jpg",
+    "category": "서프라이즈쿠폰"
   },
   {
     "id": "cgv-202606268820",
