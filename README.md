@@ -36,24 +36,6 @@ cd frontend
 npm install && npm run dev
 ```
 
-## 수동 실행 및 관리
-
-### 1. GitHub Actions (추천)
-
-최신 데이터로 즉시 업데이트해야 할 때:
-1. GitHub 리포지토리의 **Actions** 탭으로 이동합니다.
-2. **Update Movie Coupon Events** 워크플로우를 선택합니다.
-3. **Run workflow** 버튼을 클릭해 실행합니다.
-   - 실행을 마친 후 `gh-pages` 브랜치로 최신 데이터를 자동 배포합니다.
-
-### 2. 로컬 데이터 생성
-
-```bash
-# 로컬에서 데이터 수집 확인
-python backend/main.py
-```
-- 생성한 `events.json`, `events.ics` 파일은 로컬 테스트용이며 Git에 커밋하지 않습니다.
-
 ## 프로젝트 구조
 
 | 경로 | 설명 |
