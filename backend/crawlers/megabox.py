@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -33,9 +34,19 @@ def get_megabox_zero_tickets():
     results = []
     
     try:
-        # 1. 목록 페이지 조회
-        response = requests.post(url, data=payload, headers=headers)
-        response.raise_for_status()
+        # 1. 목록 페이지 조회 (타임아웃 10초 설정 및 최대 3회 재시도)
+        response = None
+        for attempt in range(3):
+            try:
+                response = requests.post(url, data=payload, headers=headers, timeout=10)
+                response.raise_for_status()
+                break  # 성공 시 루프 탈출
+            except requests.RequestException as e:
+                print(f"[Megabox] 목록 조회 실패 (시도 {attempt + 1}/3): {e}")
+                if attempt < 2:
+                    time.sleep(2)
+                else:
+                    raise e
         
         soup = BeautifulSoup(response.text, 'html.parser')
         items = soup.select('.event-list .item')
