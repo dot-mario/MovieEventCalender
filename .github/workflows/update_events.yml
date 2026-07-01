@@ -84,6 +84,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/dist
           publish_branch: gh-pages
+          cname: ${{ vars.CUSTOM_DOMAIN }}
           force_orphan: false
           user_name: 'github-actions[bot]'
           user_email: '41898282+github-actions[bot]@users.noreply.github.com'
