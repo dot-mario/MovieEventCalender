@@ -18,15 +18,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "mega-20850",
-    "theater": "MEGABOX",
-    "title": "그린랜드 2: 마이그레이션",
-    "startDate": "2026-06-29 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20850",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/26/c4c1sNXUDIPWZZe0QoszKnTBOkOSrnVA.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "cgv-202606268632",
     "theater": "CGV",
     "title": "그림자 아이",
@@ -43,15 +34,6 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606268820",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0626/7cf0f7be71964eecad9c5be7dc40433d.jpg",
     "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "mega-20851",
-    "theater": "MEGABOX",
-    "title": "마티 슈프림",
-    "startDate": "2026-06-29 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20851",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/26/8Wab3q0Bn0tbozfUSLir9OlZh1oMj67B.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24418",
@@ -72,15 +54,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "mega-20856",
-    "theater": "MEGABOX",
-    "title": "짝사랑 세계",
-    "startDate": "2026-06-30 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20856",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/29/XhJzJwLo63TgT0rqkB0X3FujoEHQ8bvA.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "cgv-202606298524",
     "theater": "CGV",
     "title": "눈동자",
@@ -97,15 +70,6 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606298525",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0629/2c970253303a4520abeea1c6085cae80.jpg",
     "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "mega-20857",
-    "theater": "MEGABOX",
-    "title": "눈동자",
-    "startDate": "2026-06-30 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20857",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/16/TOxSMsWKEv5pXdeJGJS58b4EyUM3Vc5N.jpg",
-    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24385",
