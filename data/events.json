@@ -27,6 +27,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "cgv-202606268820",
+    "theater": "CGV",
+    "title": "그린랜드 2-마이그레이션",
+    "startDate": "2026-06-29 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606268820",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0626/7cf0f7be71964eecad9c5be7dc40433d.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "mega-20851",
     "theater": "MEGABOX",
     "title": "마티 슈프림",
@@ -45,15 +54,6 @@
     "category": "무비싸다구"
   },
   {
-    "id": "lotte-201210016922014-24110",
-    "theater": "LOTTECINEMA",
-    "title": "군체",
-    "startDate": "2026-06-30 11:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24110_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
     "id": "mega-20856",
     "theater": "MEGABOX",
     "title": "짝사랑 세계",
@@ -69,15 +69,6 @@
     "startDate": "2026-06-30 12:00:00",
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606298524",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0629/b6041b0cbc244209a8c43582b5cdffd8.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202606298525",
-    "theater": "CGV",
-    "title": "군체",
-    "startDate": "2026-06-30 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202606298525",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0629/2c970253303a4520abeea1c6085cae80.jpg",
     "category": "서프라이즈쿠폰"
   },
   {
