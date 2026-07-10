@@ -124,5 +124,14 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20914",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/26/8Wab3q0Bn0tbozfUSLir9OlZh1oMj67B.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "lotte-201210016922014-24110",
+    "theater": "LOTTECINEMA",
+    "title": "군체",
+    "startDate": "2026-07-13 11:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24110_201_1.jpg",
+    "category": "무비싸다구"
   }
 ]
