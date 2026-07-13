@@ -1,14 +1,5 @@
 [
   {
-    "id": "cgv-202607038968",
-    "theater": "CGV",
-    "title": "키퍼",
-    "startDate": "2026-07-06 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202607038968",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0703/58979724baa5469d82421be330f6f6b0.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "lotte-201210016922014-24447",
     "theater": "LOTTECINEMA",
     "title": "하나 코리아",
@@ -25,24 +16,6 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=20896",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/07/06/6G3FLB6Zy0xpzcPgxXKe64mb1laIjxq7.jpg",
     "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202607068972",
-    "theater": "CGV",
-    "title": "눈동자",
-    "startDate": "2026-07-07 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202607068972",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0706/d2dc7699d7b64df7bbdd0304031f31bf.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202607068973",
-    "theater": "CGV",
-    "title": "하나 코리아",
-    "startDate": "2026-07-07 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202607068973",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0706/a27145b6da054ae1ad2f7a66ae05a175.jpg",
-    "category": "서프라이즈쿠폰"
   },
   {
     "id": "mega-20897",
@@ -115,23 +88,5 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24110_201_1.jpg",
     "category": "무비싸다구"
-  },
-  {
-    "id": "cgv-202607109056",
-    "theater": "CGV",
-    "title": "다윗",
-    "startDate": "2026-07-14 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202607109056",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0710/6506d7848a434f02ad311cce06577996.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202607108883",
-    "theater": "CGV",
-    "title": "눈동자",
-    "startDate": "2026-07-14 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202607108883",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0710/7c0589e86caa411f8e4c59c04e984cbc.jpg",
-    "category": "서프라이즈쿠폰"
   }
 ]
