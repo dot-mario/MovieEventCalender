@@ -1,23 +1,5 @@
 [
   {
-    "id": "mega-20896",
-    "theater": "MEGABOX",
-    "title": "짝사랑 세계",
-    "startDate": "2026-07-07 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20896",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/07/06/6G3FLB6Zy0xpzcPgxXKe64mb1laIjxq7.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-20897",
-    "theater": "MEGABOX",
-    "title": "눈동자",
-    "startDate": "2026-07-07 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=20897",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/06/16/TOxSMsWKEv5pXdeJGJS58b4EyUM3Vc5N.jpg",
-    "category": "빵원티켓"
-  },
-  {
     "id": "lotte-201210016922014-24420",
     "theater": "LOTTECINEMA",
     "title": "마티 슈프림",
