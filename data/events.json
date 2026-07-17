@@ -27,6 +27,15 @@
     "category": "무비싸다구"
   },
   {
+    "id": "mega-20941",
+    "theater": "MEGABOX",
+    "title": "드림 애니멀즈: 더 무비",
+    "startDate": "2026-07-20 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20941",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/07/16/PXYc7fRBFBwdtST3jJ2Kwu7VKc0etYtm.jpg",
+    "category": "빵원티켓"
+  },
+  {
     "id": "lotte-201210016922014-24575",
     "theater": "LOTTECINEMA",
     "title": "호컴",
