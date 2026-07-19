@@ -1,14 +1,5 @@
 [
   {
-    "id": "lotte-201210016922014-24110",
-    "theater": "LOTTECINEMA",
-    "title": "군체",
-    "startDate": "2026-07-13 11:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202605/24110_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
     "id": "lotte-201210016922014-24385",
     "theater": "LOTTECINEMA",
     "title": "눈동자",
@@ -25,6 +16,15 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202607/24379_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "mega-20941",
+    "theater": "MEGABOX",
+    "title": "드림 애니멀즈: 더 무비",
+    "startDate": "2026-07-20 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20941",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/07/16/PXYc7fRBFBwdtST3jJ2Kwu7VKc0etYtm.jpg",
+    "category": "빵원티켓"
   },
   {
     "id": "lotte-201210016922014-24575",
