@@ -18,6 +18,15 @@
     "category": "무비싸다구"
   },
   {
+    "id": "lotte-201210016922014-24523",
+    "theater": "LOTTECINEMA",
+    "title": "호프",
+    "startDate": "2026-07-20 11:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202607/24523_201_1.jpg",
+    "category": "무비싸다구"
+  },
+  {
     "id": "mega-20941",
     "theater": "MEGABOX",
     "title": "드림 애니멀즈: 더 무비",
@@ -43,5 +52,14 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202607/24533_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "mega-20950",
+    "theater": "MEGABOX",
+    "title": "호프",
+    "startDate": "2026-07-20 16:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=20950",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/07/20/PIplZcpHogZMKgQtAuxDffIiFqqqxvK2.jpg",
+    "category": "빵원티켓"
   }
 ]
