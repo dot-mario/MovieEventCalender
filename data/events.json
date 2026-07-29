@@ -9,6 +9,15 @@
     "category": "빵원티켓"
   },
   {
+    "id": "cgv-202607158998",
+    "theater": "CGV",
+    "title": "드림 애니멀즈",
+    "startDate": "2026-07-20 14:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202607158998",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0715/e3f6ac31b39e4672b9b5e2b55b0d3448.jpg",
+    "category": "서프라이즈쿠폰"
+  },
+  {
     "id": "mega-20957",
     "theater": "MEGABOX",
     "title": "호프",
@@ -27,6 +36,15 @@
     "category": "무비싸다구"
   },
   {
+    "id": "cgv-202607239359",
+    "theater": "CGV",
+    "title": "호프",
+    "startDate": "2026-07-24 15:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202607239359",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0723/8eb93e5026d2433489397009c28da630.jpg",
+    "category": "스피드쿠폰"
+  },
+  {
     "id": "lotte-201210016922014-24523",
     "theater": "LOTTECINEMA",
     "title": "호프",
@@ -34,6 +52,15 @@
     "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
     "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202607/24523_201_1.jpg",
     "category": "무비싸다구"
+  },
+  {
+    "id": "cgv-202607249260",
+    "theater": "CGV",
+    "title": "산양들",
+    "startDate": "2026-07-27 12:00:00",
+    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202607249260",
+    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0724/d90104a8b13e4f529026c1baaf6b721a.jpg",
+    "category": "서프라이즈쿠폰"
   },
   {
     "id": "lotte-201210016922014-24533",
