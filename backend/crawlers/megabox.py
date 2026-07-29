@@ -16,6 +16,14 @@ LIST_TIMEOUT = 10
 DETAIL_TIMEOUT = 5
 
 
+def extract_event_items(html):
+    soup = BeautifulSoup(html, "html.parser")
+    event_list = soup.select_one(".event-list")
+    if event_list is None:
+        raise RuntimeError("목록 응답에서 event-list를 찾을 수 없습니다.")
+    return event_list.select(".item")
+
+
 def get_megabox_zero_tickets():
     """
     메가박스 '빵원티켓' 목록을 가져온 후,
@@ -57,8 +65,7 @@ def get_megabox_zero_tickets():
                         raise
                     time.sleep(2)
 
-            soup = BeautifulSoup(response.text, "html.parser")
-            items = soup.select(".event-list .item")
+            items = extract_event_items(response.text)
 
             for item in items:
                 a_tag = item.find("a")

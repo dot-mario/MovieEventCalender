@@ -36,6 +36,18 @@ def format_ics_datetime(value):
     return value.strftime("%Y%m%dT%H%M%S")
 
 
+def escape_ics_text(value):
+    return (
+        str(value)
+        .replace("\\", "\\\\")
+        .replace("\r\n", "\\n")
+        .replace("\n", "\\n")
+        .replace("\r", "\\n")
+        .replace(";", "\\;")
+        .replace(",", "\\,")
+    )
+
+
 def fetch_all_events():
     """
     3사 크롤러를 병렬(멀티스레드)로 실행하여 결과를 취합하고 개별 소요 시간을 측정합니다.
@@ -155,12 +167,14 @@ def save_events_to_ics(events):
         theater_label = THEATER_LABELS.get(
             event.get("theater", ""), event.get("theater", "")
         )
-        summary = (
+        summary = escape_ics_text(
             f"[{theater_label}] {event.get('title', '')} - {event.get('category', '')}"
         )
 
         # DTSTAMP가 매번 변경되는 것을 방지하기 위해 이벤트 시작 시간을 기준으로 고정값을 사용합니다.
-        stable_stamp = format_ics_datetime(start_dt)
+        stable_stamp = start_dt.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        description = escape_ics_text(f"예매 링크: {event.get('url', '')}")
+        location = escape_ics_text(theater_label)
 
         lines.extend(
             [
@@ -170,9 +184,9 @@ def save_events_to_ics(events):
                 f"DTSTART;TZID=Asia/Seoul:{format_ics_datetime(start_dt)}",
                 f"DTEND;TZID=Asia/Seoul:{format_ics_datetime(end_dt)}",
                 f"SUMMARY:{summary}",
-                f"DESCRIPTION:예매 링크: {event.get('url', '')}",
+                f"DESCRIPTION:{description}",
                 f"URL:{event.get('url', '')}",
-                f"LOCATION:{theater_label}",
+                f"LOCATION:{location}",
                 "SEQUENCE:0",
                 "STATUS:CONFIRMED",
                 "TRANSP:TRANSPARENT",
