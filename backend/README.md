@@ -16,7 +16,6 @@ CGV, 메가박스, 롯데시네마 3사의 선착순 할인 이벤트를 자동�
 | 언어 | Python 3.10+ |
 | HTTP 요청 | Requests |
 | HTML 파싱 | BeautifulSoup4 |
-| 동적 페이지 | Playwright (Chromium) |
 | 자동화 | GitHub Actions (cron) |
 
 ## 프로젝트 구조
@@ -27,6 +26,7 @@ backend/
 ├── requirements.txt         # Python 의존성
 └── crawlers/
     ├── models.py            # MovieEvent 공통 데이터 모델
+    ├── network.py           # 공통 HTTP 재시도 세션
     ├── cgv.py               # CGV 스피드쿠폰 크롤러
     ├── megabox.py           # 메가박스 빵원티켓 크롤러
     └── lottecinema.py       # 롯데시네마 무비싸다구 크롤러
@@ -37,7 +37,6 @@ backend/
 ### 사전 요구사항
 
 - Python 3.10+
-- Playwright Chromium 브라우저
 
 ### 로컬 실행
 
@@ -48,9 +47,6 @@ conda activate MovieEventCalender
 
 # 의존성 설치
 pip install -r requirements.txt
-
-# Playwright 브라우저 설치
-playwright install chromium
 
 # 크롤러 실행
 python main.py

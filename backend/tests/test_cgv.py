@@ -3,35 +3,16 @@ import unittest
 from crawlers.cgv import (
     build_movie_events,
     extract_event_search_payload,
-    is_cgv_search_api_url,
     normalize_start_date,
 )
 
 
 class CgvCrawlerTest(unittest.TestCase):
-    def test_matches_old_and_new_search_api_urls(self):
-        old_url = (
-            "https://api.cgv.co.kr/tme/more/itgrSrch/"
-            "searchItgrSrchAll?coCd=A420&swrd=%EC%BF%A0%ED%8F%B0"
-        )
-        new_url = (
-            "https://cgv.co.kr/api/v1/common/timeline/more/itgrSrch/"
-            "searchItgrSrchAll?coCd=A420&swrd=%EC%BF%A0%ED%8F%B0"
-        )
-
-        self.assertTrue(is_cgv_search_api_url(old_url))
-        self.assertTrue(is_cgv_search_api_url(new_url))
-        self.assertFalse(
-            is_cgv_search_api_url(
-                "https://api.cgv.co.kr/tme/more/itgrSrch/searchItgrSrchMov"
-            )
-        )
-
     def test_extracts_event_list_and_distinguishes_empty_result(self):
         payload = {
             "statusCode": 0,
             "data": {
-                "itgrSrchEvntSearchResData": {
+                "evntInfo": {
                     "totalCnt": 1,
                     "evntLst": [
                         {
@@ -43,13 +24,14 @@ class CgvCrawlerTest(unittest.TestCase):
             },
         }
 
-        schema_found, events = extract_event_search_payload(payload)
-        self.assertTrue(schema_found)
+        events = extract_event_search_payload(payload)
         self.assertEqual(["100"], [event["evntNo"] for event in events])
 
-        schema_found, events = extract_event_search_payload({"data": {"evntLst": []}})
-        self.assertTrue(schema_found)
-        self.assertEqual([], events)
+        self.assertEqual(
+            [],
+            extract_event_search_payload({"data": {"evntInfo": {"evntLst": []}}}),
+        )
+        self.assertIsNone(extract_event_search_payload({"data": {}}))
 
     def test_builds_only_movie_coupon_events_and_deduplicates(self):
         raw_events = [

@@ -3,31 +3,13 @@ import os
 import re
 import sys
 
-import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
-
 # 단독 실행 시 모듈 경로 인식 에러 방지용
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from crawlers.models import MovieEvent
+from crawlers.network import create_retry_session
 
 REQUEST_TIMEOUT = (5, 20)
-
-
-def create_retry_session():
-    retry_policy = Retry(
-        total=2,
-        connect=2,
-        read=2,
-        status=2,
-        backoff_factor=0.5,
-        status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=frozenset({"GET", "POST"}),
-    )
-    session = requests.Session()
-    session.mount("https://", HTTPAdapter(max_retries=retry_policy))
-    return session
 
 
 def get_lottecinema_moviesadagu():

@@ -2,15 +2,14 @@ import json
 import os
 import re
 import sys
-import time
 
-import requests
 from bs4 import BeautifulSoup
 
 # 단독 실행 시 모듈 경로 인식 에러 방지용
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from crawlers.models import MovieEvent
+from crawlers.network import create_retry_session
 
 LIST_TIMEOUT = 10
 DETAIL_TIMEOUT = 5
@@ -45,25 +44,16 @@ def get_megabox_zero_tickets():
     }
 
     results = []
-    with requests.Session() as session:
+    with create_retry_session() as session:
         try:
-            # 1. 목록 페이지 조회 (최대 3회 재시도)
-            response = None
-            for attempt in range(3):
-                try:
-                    response = session.post(
-                        url,
-                        data=payload,
-                        headers=headers,
-                        timeout=LIST_TIMEOUT,
-                    )
-                    response.raise_for_status()
-                    break
-                except requests.RequestException as error:
-                    print(f"[Megabox] 목록 조회 실패 (시도 {attempt + 1}/3): {error}")
-                    if attempt == 2:
-                        raise
-                    time.sleep(2)
+            # 1. 목록 페이지 조회
+            response = session.post(
+                url,
+                data=payload,
+                headers=headers,
+                timeout=LIST_TIMEOUT,
+            )
+            response.raise_for_status()
 
             items = extract_event_items(response.text)
 
