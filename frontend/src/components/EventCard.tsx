@@ -156,7 +156,7 @@ export default function EventCard({ event }: EventCardProps) {
             rel="noopener noreferrer"
             className="flex-1 rounded-xl bg-white/10 py-2.5 text-center text-base font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20 active:scale-95"
           >
-            이벤트 페이지 →
+            이벤트 페이지
           </a>
           <a
             href={buildGoogleCalendarUrl(event)}
