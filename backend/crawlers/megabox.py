@@ -1,12 +1,6 @@
-import json
-import os
 import re
-import sys
 
 from bs4 import BeautifulSoup
-
-# 단독 실행 시 모듈 경로 인식 에러 방지용
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from crawlers.models import MovieEvent
 from crawlers.network import create_retry_session
@@ -33,7 +27,8 @@ def get_megabox_zero_tickets():
 
     payload = {
         "currentPage": "1",
-        "recordCountPerPage": "10",
+        # ponytail: 100건 단일 요청, 동시 진행 이벤트가 이를 넘으면 페이지네이션한다.
+        "recordCountPerPage": "100",
         "eventTitle": "빵원",
         "eventStatCd": "ONG",
         "orderReqCd": "ONGlist",
@@ -114,10 +109,3 @@ def get_megabox_zero_tickets():
             raise RuntimeError("메가박스 크롤링에 실패했습니다.") from error
 
     return results
-
-
-if __name__ == "__main__":
-    # 단독 모듈로 실행 테스트
-    events = get_megabox_zero_tickets()
-    event_dicts = [event.to_dict() for event in events]
-    print(json.dumps(event_dicts, indent=2, ensure_ascii=False))

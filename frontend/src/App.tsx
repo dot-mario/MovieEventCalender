@@ -3,6 +3,13 @@ import EventCard from './components/EventCard';
 import TheaterFilter from './components/TheaterFilter';
 import type { MovieEvent, TheaterFilter as TheaterFilterType, SortMode } from './types';
 import CalendarView from './components/CalendarView';
+import { eventStartTime } from './date';
+
+const SORT_OPTIONS: { value: SortMode; label: string }[] = [
+  { value: 'time', label: '⏱ 시간순' },
+  { value: 'movie', label: '🎬 영화별' },
+  { value: 'calendar', label: '📅 달력' },
+];
 
 function App() {
   const [events, setEvents] = useState<MovieEvent[]>([]);
@@ -26,14 +33,12 @@ function App() {
         return res.json();
       })
       .then((data: MovieEvent[]) => {
-        data.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
         setEvents(data);
-        setLoading(false);
       })
       .catch((err) => {
         setError(err.message);
-        setLoading(false);
-      });
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   const counts = useMemo(() => {
@@ -51,16 +56,17 @@ function App() {
   const { upcoming, past } = useMemo(() => {
     const up: MovieEvent[] = [];
     const pa: MovieEvent[] = [];
+    const nowTime = now.getTime();
     filtered.forEach((e) => {
-      if (new Date(e.startDate).getTime() > now.getTime()) {
+      if (eventStartTime(e) > nowTime) {
         up.push(e);
       } else {
         pa.push(e);
       }
     });
     // 다가오는 이벤트는 가까운 시간순(오름차순), 지난 이벤트는 최신순(내림차순)으로 정렬
-    up.sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
-    pa.sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
+    up.sort((a, b) => eventStartTime(a) - eventStartTime(b));
+    pa.sort((a, b) => eventStartTime(b) - eventStartTime(a));
     return { upcoming: up, past: pa };
   }, [filtered, now]);
 
@@ -75,13 +81,11 @@ function App() {
     // 그룹 내 이벤트를 최신순으로 정렬하고, 그룹 간 정렬도 가장 최신 이벤트 기준으로 내림차순 정렬
     return Array.from(groups.entries())
       .map(([title, events]) => {
-        const sortedEvents = [...events].sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
+        const sortedEvents = [...events].sort((a, b) => eventStartTime(b) - eventStartTime(a));
         return [title, sortedEvents] as [string, MovieEvent[]];
       })
       .sort(([, a], [, b]) => {
-        const aMax = new Date(a[0].startDate).getTime();
-        const bMax = new Date(b[0].startDate).getTime();
-        return bMax - aMax;
+        return eventStartTime(b[0]) - eventStartTime(a[0]);
       });
   }, [filtered]);
 
@@ -131,10 +135,10 @@ function App() {
             </div>
 
             {/* ICS 구독 버튼 */}
-            <div className="flex items-center gap-2">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
               <button
                 onClick={handleCopyIcs}
-                className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-gray-300 transition-all hover:bg-white/10 hover:text-white active:scale-95"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-gray-300 transition-all hover:bg-white/10 hover:text-white active:scale-95"
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -145,7 +149,7 @@ function App() {
                 href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-gray-300 transition-all hover:bg-white/10 hover:text-white active:scale-95"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-gray-300 transition-all hover:bg-white/10 hover:text-white active:scale-95"
                 title="Google 캘린더에 등록"
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -178,36 +182,19 @@ function App() {
 
               {/* 정렬 토글 */}
               <div className="flex w-fit items-center gap-1 rounded-xl border border-white/10 bg-white/5 p-1">
-                <button
-                  onClick={() => setSortMode('time')}
-                  className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-all ${
-                    sortMode === 'time'
-                      ? 'bg-white/15 text-white'
-                      : 'text-gray-400 hover:text-white'
-                  }`}
-                >
-                  ⏱ 시간순
-                </button>
-                <button
-                  onClick={() => setSortMode('movie')}
-                  className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-all ${
-                    sortMode === 'movie'
-                      ? 'bg-white/15 text-white'
-                      : 'text-gray-400 hover:text-white'
-                  }`}
-                >
-                  🎬 영화별
-                </button>
-                <button
-                  onClick={() => setSortMode('calendar')}
-                  className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-all ${
-                    sortMode === 'calendar'
-                      ? 'bg-white/15 text-white'
-                      : 'text-gray-400 hover:text-white'
-                  }`}
-                >
-                  📅 달력
-                </button>
+                {SORT_OPTIONS.map((option) => (
+                  <button
+                    key={option.value}
+                    onClick={() => setSortMode(option.value)}
+                    className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-all ${
+                      sortMode === option.value
+                        ? 'bg-white/15 text-white'
+                        : 'text-gray-400 hover:text-white'
+                    }`}
+                  >
+                    {option.label}
+                  </button>
+                ))}
               </div>
             </div>
 

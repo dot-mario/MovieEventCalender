@@ -1,16 +1,5 @@
-import json
-import os
 import re
-import sys
 from datetime import datetime
-
-# 윈도우 환경에서 콘솔 출력(이모지 등) 인코딩 에러 방지
-if sys.platform == "win32" and hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8")
-
-
-# 단독 실행 시 모듈 경로 인식 에러 방지용
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from crawlers.models import MovieEvent
 from crawlers.network import create_retry_session
@@ -155,9 +144,3 @@ def get_cgv_coupons():
     results = build_movie_events(raw_events)
     print(f"[CGV] 검색 결과에서 영화 쿠폰 {len(results)}개를 선별했습니다.")
     return results
-
-
-if __name__ == "__main__":
-    events = get_cgv_coupons()
-    event_dicts = [event.to_dict() for event in events]
-    print(json.dumps(event_dicts, indent=2, ensure_ascii=False))

@@ -48,6 +48,24 @@ def escape_ics_text(value):
     )
 
 
+def fold_ics_line(value):
+    chunks = []
+    chunk = ""
+    chunk_size = 0
+    for char in value:
+        char_size = len(char.encode("utf-8"))
+        limit = 75 if not chunks else 74
+        if chunk and chunk_size + char_size > limit:
+            chunks.append(chunk)
+            chunk = char
+            chunk_size = char_size
+        else:
+            chunk += char
+            chunk_size += char_size
+    chunks.append(chunk)
+    return "\r\n ".join(chunks)
+
+
 def fetch_all_events():
     """
     3사 크롤러를 병렬(멀티스레드)로 실행하여 결과를 취합하고 개별 소요 시간을 측정합니다.
@@ -203,7 +221,7 @@ def save_events_to_ics(events):
 
     temp_ics_output_file = f"{ICS_OUTPUT_FILE}.tmp"
     with open(temp_ics_output_file, "w", encoding="utf-8", newline="") as f:
-        f.write("\r\n".join(lines) + "\r\n")
+        f.write("\r\n".join(fold_ics_line(line) for line in lines) + "\r\n")
     os.replace(temp_ics_output_file, ICS_OUTPUT_FILE)
 
     print(

@@ -16,7 +16,7 @@ CGV(스피드쿠폰), 메가박스(빵원티켓), 롯데시네마(무비싸다�
 | 구분 | 기술 |
 |------|------|
 | 프레임워크 | React 19 + TypeScript |
-| 빌드 도구 | Vite 7 |
+| 빌드 도구 | Vite 8 |
 | 스타일링 | Tailwind CSS 4 |
 | 린트 | ESLint + typescript-eslint |
 | 데이터 | 정적 JSON (`public/data/events.json`) Fetch |
@@ -30,9 +30,11 @@ frontend/
 │       └── events.json        # 크롤러가 생성한 이벤트 데이터 (자동 업데이트)
 ├── src/
 │   ├── components/
+│   │   ├── CalendarView.tsx   # 월별 이벤트 캘린더
 │   │   ├── EventCard.tsx      # 개별 이벤트 카드 컴포넌트
 │   │   └── TheaterFilter.tsx  # 극장 필터 컴포넌트
 │   ├── App.tsx                # 메인 애플리케이션
+│   ├── date.ts                # KST 이벤트 날짜 변환
 │   ├── main.tsx               # 엔트리 포인트
 │   ├── types.ts               # 타입 정의
 │   └── index.css              # 글로벌 스타일
@@ -46,7 +48,7 @@ frontend/
 
 ### 사전 요구사항
 
-- Node.js 18+
+- Node.js 20+
 - npm
 
 ### 설치 및 실행
@@ -72,7 +74,7 @@ npm run preview
 ```
 [GitHub Actions] → Python 크롤러 실행 (2시간 주기)
        ↓
-[events.json] → frontend/public/data/ 에 자동 커밋
+[events.json] → GitHub Pages 데이터 디렉토리에 배포
        ↓
 [React App] → fetch()로 JSON 로드 → 브라우저에서 렌더링
 ```

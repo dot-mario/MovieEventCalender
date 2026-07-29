@@ -1,15 +1,20 @@
 import json
-import os
 import re
-import sys
-
-# 단독 실행 시 모듈 경로 인식 에러 방지용
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from datetime import datetime
 
 from crawlers.models import MovieEvent
 from crawlers.network import create_retry_session
 
 REQUEST_TIMEOUT = (5, 20)
+
+
+def normalize_start_date(date_value, time_value):
+    try:
+        return datetime.fromisoformat(f"{date_value}T{time_value}").strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
+    except (TypeError, ValueError):
+        return ""
 
 
 def get_lottecinema_moviesadagu():
@@ -111,14 +116,13 @@ def get_lottecinema_moviesadagu():
                         img_url = item.get("Img5Url", "")
                         movie_cd = item.get("MovieCd", "unknown")
 
-                        if not title or not start_date:
+                        full_start_date = normalize_start_date(start_date, start_time)
+                        if not title or not full_start_date:
                             continue
 
                         unique_key = (title, start_date, start_time)
                         if unique_key not in seen:
                             seen.add(unique_key)
-
-                            full_start_date = f"{start_date} {start_time}".strip()
 
                             results.append(
                                 MovieEvent(
@@ -139,9 +143,3 @@ def get_lottecinema_moviesadagu():
             raise RuntimeError("롯데시네마 크롤링에 실패했습니다.") from error
 
     return results
-
-
-if __name__ == "__main__":
-    events = get_lottecinema_moviesadagu()
-    event_dicts = [event.to_dict() for event in events]
-    print(json.dumps(event_dicts, indent=2, ensure_ascii=False))

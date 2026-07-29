@@ -4,6 +4,7 @@ from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
 import main as backend_main
+from crawlers.lottecinema import normalize_start_date as normalize_lotte_start_date
 from crawlers.models import MovieEvent
 
 
@@ -73,7 +74,7 @@ class MainPipelineTest(unittest.TestCase):
 
     def test_ics_uses_utc_stamp_and_escapes_text(self):
         event = sample_event("cgv-1", "CGV")
-        event.title = "테스트, 영화; 특별"
+        event.title = "테스트, 영화; 특별" * 10
         event.startDate = "2099-08-01 14:00:00"
 
         with TemporaryDirectory() as temp_dir:
@@ -84,10 +85,21 @@ class MainPipelineTest(unittest.TestCase):
             ):
                 backend_main.save_events_to_ics([event.to_dict()])
 
-            contents = output_file.read_text(encoding="utf-8")
+            contents = output_file.read_bytes().decode("utf-8")
 
         self.assertIn("DTSTAMP:20990801T050000Z", contents)
-        self.assertIn(r"SUMMARY:[CGV] 테스트\, 영화\; 특별 - 테스트", contents)
+        self.assertIn(r"SUMMARY:[CGV] 테스트\, 영화\; 특별", contents)
+        self.assertIn("\r\n ", contents)
+        self.assertTrue(
+            all(len(line.encode("utf-8")) <= 75 for line in contents.split("\r\n"))
+        )
+
+    def test_lotte_start_date_is_normalized_or_rejected(self):
+        self.assertEqual(
+            "2026-07-29 14:00:00",
+            normalize_lotte_start_date("2026-07-29", "14:00"),
+        )
+        self.assertEqual("", normalize_lotte_start_date("2026-07-29", None))
 
 
 if __name__ == "__main__":

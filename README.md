@@ -42,7 +42,7 @@ npm install && npm run dev
 |------|------|
 | `/backend` | Python 기반 크롤링 파이프라인 |
 | `/frontend` | React 및 Tailwind CSS 기반 대시보드 |
-| `/docs` | 상세 기획 및 기술 분석 문서 |
+| `/*.md` | 상세 기획 및 기술 분석 문서 |
 
 ## 관련 문서
 

@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import type { MovieEvent } from '../types';
+import { parseEventDate } from '../date';
 
 interface CalendarViewProps {
   events: MovieEvent[];
@@ -39,15 +40,15 @@ const CalendarView = ({ events }: CalendarViewProps) => {
     
     return {
       days: daysArray,
-      monthName: currentDate.toLocaleString('ko-KR', { month: 'long', year: 'numeric' })
+      monthName: firstDayOfMonth.toLocaleString('ko-KR', { month: 'long', year: 'numeric' })
     };
-  }, [year, month, currentDate]);
+  }, [year, month]);
 
   // 이벤트를 날짜별로 그룹화
   const eventsByDate = useMemo(() => {
     const grouped: Record<string, MovieEvent[]> = {};
     events.forEach(event => {
-      const dateStr = new Date(event.startDate).toDateString();
+      const dateStr = parseEventDate(event.startDate).toDateString();
       if (!grouped[dateStr]) grouped[dateStr] = [];
       grouped[dateStr].push(event);
     });
@@ -65,6 +66,8 @@ const CalendarView = ({ events }: CalendarViewProps) => {
   const goToToday = () => {
     setCurrentDate(new Date());
   };
+
+  const today = new Date().toDateString();
 
   return (
     <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-6 backdrop-blur-xl">
@@ -104,81 +107,72 @@ const CalendarView = ({ events }: CalendarViewProps) => {
         </div>
       </div>
 
-      {/* 요일 헤더 */}
-      <div className="mb-2 grid grid-cols-7 gap-px text-center text-xs font-bold text-gray-500 uppercase tracking-wider">
-        {['일', '월', '화', '수', '목', '금', '토'].map(day => (
-          <div key={day} className="py-2">{day}</div>
-        ))}
-      </div>
+      <div className="overflow-x-auto pb-2">
+        <div className="min-w-[56rem] sm:min-w-0">
+          {/* 요일 헤더 */}
+          <div className="mb-2 grid grid-cols-7 gap-px text-center text-xs font-bold text-gray-500 uppercase tracking-wider">
+            {['일', '월', '화', '수', '목', '금', '토'].map(day => (
+              <div key={day} className="py-2">{day}</div>
+            ))}
+          </div>
 
-      {/* 달력 그리드 */}
-      <div className="grid grid-cols-7 gap-2">
-        {days.map((date, idx) => {
-          if (!date) return <div key={`empty-${idx}`} className="aspect-square rounded-xl bg-transparent" />;
-          
-          const dateStr = date.toDateString();
-          const dayEvents = eventsByDate[dateStr] || [];
-          const isToday = dateStr === new Date().toDateString();
-          
-          return (
-            <div
-              key={dateStr}
-              className={`group relative flex flex-col gap-1 rounded-xl border p-2 transition-all h-[120px] sm:h-[140px] ${
-                isToday 
-                  ? 'border-purple-500/50 bg-purple-500/5 ring-1 ring-purple-500/30' 
-                  : 'border-white/5 bg-white/5 hover:border-white/20'
-              }`}
-            >
-              <div className="flex items-center justify-between mb-0.5">
-                <span className={`text-xs font-semibold ${isToday ? 'text-purple-400' : 'text-gray-500'}`}>
-                  {date.getDate()}
-                </span>
-                {dayEvents.length > 5 && (
-                  <span className="text-[9px] font-medium text-gray-600 bg-white/5 px-1 rounded">
-                    +{dayEvents.length - 5}
-                  </span>
-                )}
-              </div>
-              
-              <div className="flex-1 flex flex-col gap-1 overflow-y-auto custom-scrollbar pr-0.5">
-                {dayEvents.map((event, eIdx) => {
-                  const eventTime = new Date(event.startDate).toLocaleTimeString('ko-KR', {
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    hour12: false
-                  });
-                  return (
-                    <a
-                      key={`${event.id}-${eIdx}`}
-                      href={event.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`block truncate rounded px-1.5 py-0.5 text-[10px] sm:text-[11px] font-medium border transition-all hover:scale-[1.02] active:scale-95 ${THEATER_COLORS[event.theater]}`}
-                      title={`${eventTime} | ${event.title}`}
-                    >
-                      <span className="opacity-70 mr-1 text-[9px] sm:text-[10px]">{eventTime}</span>
-                      {event.title}
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
-          );
-        })}
+          {/* 달력 그리드 */}
+          <div className="grid grid-cols-7 gap-2">
+            {days.map((date, idx) => {
+              if (!date) return <div key={`empty-${idx}`} className="aspect-square rounded-xl bg-transparent" />;
+
+              const dateStr = date.toDateString();
+              const dayEvents = eventsByDate[dateStr] || [];
+              const isToday = dateStr === today;
+
+              return (
+                <div
+                  key={dateStr}
+                  className={`group relative flex h-[120px] flex-col gap-1 rounded-xl border p-2 transition-all sm:h-[140px] ${
+                    isToday
+                      ? 'border-purple-500/50 bg-purple-500/5 ring-1 ring-purple-500/30'
+                      : 'border-white/5 bg-white/5 hover:border-white/20'
+                  }`}
+                >
+                  <div className="mb-0.5 flex items-center justify-between">
+                    <span className={`text-xs font-semibold ${isToday ? 'text-purple-400' : 'text-gray-500'}`}>
+                      {date.getDate()}
+                    </span>
+                    {dayEvents.length > 5 && (
+                      <span className="rounded bg-white/5 px-1 text-[9px] font-medium text-gray-600">
+                        +{dayEvents.length - 5}
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="custom-scrollbar flex flex-1 flex-col gap-1 overflow-y-auto pr-0.5">
+                    {dayEvents.map((event) => {
+                      const eventTime = parseEventDate(event.startDate).toLocaleTimeString('ko-KR', {
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        hour12: false
+                      });
+                      return (
+                        <a
+                          key={`${event.id}-${event.startDate}`}
+                          href={event.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`block truncate rounded border px-1.5 py-0.5 text-[10px] font-medium transition-all hover:scale-[1.02] active:scale-95 sm:text-[11px] ${THEATER_COLORS[event.theater]}`}
+                          title={`${eventTime} | ${event.title}`}
+                        >
+                          <span className="mr-1 text-[9px] opacity-70 sm:text-[10px]">{eventTime}</span>
+                          {event.title}
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-      
-      <style>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 2px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: rgba(255, 255, 255, 0.1);
-          border-radius: 10px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: rgba(255, 255, 255, 0.2);
-        }
-      `}</style>
     </div>
   );
 };

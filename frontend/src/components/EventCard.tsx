@@ -1,25 +1,23 @@
 import { useState } from 'react';
 import type { MovieEvent } from '../types';
+import { parseEventDate } from '../date';
 
-const THEATER_STYLES: Record<string, { bg: string; text: string; badge: string; border: string; glow: string }> = {
+const THEATER_STYLES: Record<string, { bg: string; text: string; border: string; glow: string }> = {
   CGV: {
     bg: 'bg-red-950/40',
     text: 'text-red-400',
-    badge: 'bg-red-500/20 text-red-300 border-red-500/30',
     border: 'border-red-500/20',
     glow: 'hover:shadow-red-500/10',
   },
   MEGABOX: {
     bg: 'bg-purple-950/40',
     text: 'text-purple-400',
-    badge: 'bg-purple-500/20 text-purple-300 border-purple-500/30',
     border: 'border-purple-500/20',
     glow: 'hover:shadow-purple-500/10',
   },
   LOTTECINEMA: {
     bg: 'bg-sky-950/40',
     text: 'text-sky-400',
-    badge: 'bg-sky-500/20 text-sky-300 border-sky-500/30',
     border: 'border-sky-500/20',
     glow: 'hover:shadow-sky-500/10',
   },
@@ -33,7 +31,7 @@ const THEATER_LABELS: Record<string, string> = {
 
 function getTimeRemaining(startDate: string): { label: string; isLive: boolean; isPast: boolean } {
   const now = new Date();
-  const target = new Date(startDate);
+  const target = parseEventDate(startDate);
   const diff = target.getTime() - now.getTime();
 
   if (diff < 0) {
@@ -57,7 +55,7 @@ function getTimeRemaining(startDate: string): { label: string; isLive: boolean; 
 }
 
 function formatDate(dateStr: string): string {
-  const d = new Date(dateStr);
+  const d = parseEventDate(dateStr);
   const month = d.getMonth() + 1;
   const day = d.getDate();
   const weekday = ['일', '월', '화', '수', '목', '금', '토'][d.getDay()];
@@ -67,7 +65,7 @@ function formatDate(dateStr: string): string {
 }
 
 function buildGoogleCalendarUrl(event: MovieEvent): string {
-  const start = new Date(event.startDate);
+  const start = parseEventDate(event.startDate);
   const end = new Date(start.getTime() + 30 * 60 * 1000); // 30분 후 종료
 
   const fmt = (d: Date) =>
@@ -99,11 +97,11 @@ export default function EventCard({ event }: EventCardProps) {
     >
       {/* 이미지 영역 */}
       <div className="relative aspect-[16/9] overflow-hidden bg-gray-900">
-        {!imgError ? (
+        {event.imageUrl && !imgError ? (
           <img
             src={event.imageUrl}
             alt={event.title}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+            className="h-full w-full object-cover"
             onError={() => setImgError(true)}
             loading="lazy"
           />
@@ -166,6 +164,7 @@ export default function EventCard({ event }: EventCardProps) {
             rel="noopener noreferrer"
             className="flex items-center justify-center rounded-xl bg-white/10 px-3 py-2.5 text-white backdrop-blur-sm transition-all hover:bg-white/20 active:scale-95"
             title="Google 캘린더에 추가"
+            aria-label={`${event.title} Google 캘린더에 추가`}
           >
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
