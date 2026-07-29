@@ -56,12 +56,21 @@ playwright install chromium
 python main.py
 ```
 
+### 테스트
+
+외부 사이트에 접속하지 않는 파서·파이프라인 테스트를 실행합니다.
+
+```bash
+python -m unittest discover -s tests -v
+```
+
 ### GitHub Actions (자동)
 
 `.github/workflows/update_events.yml` 워크플로우가 **2시간 간격**으로 자동 실행됩니다.
 
 - `push` (main 브랜치) 시에도 자동으로 작동
 - `workflow_dispatch`를 통해 수동으로 실행할 수 있음
+- 어느 한 영화관 크롤러라도 실패하면 부분 데이터를 배포하지 않고 이전 정상 데이터를 유지
 
 ## 데이터 모델 (`MovieEvent`)
 
