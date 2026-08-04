@@ -1,23 +1,5 @@
 [
   {
-    "id": "cgv-202607249260",
-    "theater": "CGV",
-    "title": "산양들",
-    "startDate": "2026-07-27 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202607249260",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0724/d90104a8b13e4f529026c1baaf6b721a.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "lotte-201210016922014-24533",
-    "theater": "LOTTECINEMA",
-    "title": "드림 애니멀즈: 더무비",
-    "startDate": "2026-07-29 14:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202607/24533_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
     "id": "lotte-201210016922014-24575",
     "theater": "LOTTECINEMA",
     "title": "호컴",
