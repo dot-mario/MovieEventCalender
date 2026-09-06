@@ -45,15 +45,6 @@
     "category": "빵원티켓"
   },
   {
-    "id": "cgv-202608279796",
-    "theater": "CGV",
-    "title": "경주기행",
-    "startDate": "2026-08-31 10:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202608279796",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0828/896141f55c1745d8b3ba6f5cdb5f5056.jpg",
-    "category": "스피드쿠폰"
-  },
-  {
     "id": "mega-21140",
     "theater": "MEGABOX",
     "title": "사진의 얼굴",
