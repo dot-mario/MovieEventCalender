@@ -367,5 +367,14 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=21198",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/09/07/3HMLakbtGZFep6oBCnjI8zzaBOlHKWU4.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "mega-21213",
+    "theater": "MEGABOX",
+    "title": "비광",
+    "startDate": "2026-09-09 11:30:00",
+    "url": "https://megabox.co.kr/event/detail?eventNo=21213",
+    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/09/08/GePHsXipQpJu4o6PiO5tuv0q8kTTyow9.jpg",
+    "category": "빵원티켓"
   }
 ]
