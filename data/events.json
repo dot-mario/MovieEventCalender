@@ -1,104 +1,5 @@
 [
   {
-    "id": "cgv-202608219419",
-    "theater": "CGV",
-    "title": "비광",
-    "startDate": "2026-08-24 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202608219419",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0821/bbb590a48bcf4d8fa334443dc1bd0327.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "mega-21100",
-    "theater": "MEGABOX",
-    "title": "비광",
-    "startDate": "2026-08-25 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=21100",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/08/24/HFLdrWXr6xhlCemzIEJLEoUJTaSO2CXW.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202608249787",
-    "theater": "CGV",
-    "title": "싱 어게인",
-    "startDate": "2026-08-25 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202608249787",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0824/aeec79f1e468483082f9f7c3d717d238.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "mega-21128",
-    "theater": "MEGABOX",
-    "title": "싱 어게인",
-    "startDate": "2026-08-28 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=21128",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/08/27/i6EpsL5dO1MN7yrZPH3vZcKpYD8rbW0M.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-21129",
-    "theater": "MEGABOX",
-    "title": "인 더 그레이",
-    "startDate": "2026-08-28 16:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=21129",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/08/27/Y1ha8izeQqtDZjAYlxyLQojMJkKguVE2.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "mega-21140",
-    "theater": "MEGABOX",
-    "title": "사진의 얼굴",
-    "startDate": "2026-08-31 11:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=21140",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/08/28/i6C4qVUT3aXbZChlIc2jqnfy7K0umTr7.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202608279876",
-    "theater": "CGV",
-    "title": "캐리어를 끄는 소녀",
-    "startDate": "2026-08-31 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202608279876",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0827/2d10b9446aaf4b01b3beb924b640d53b.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "cgv-202608279342",
-    "theater": "CGV",
-    "title": "핵소 고지",
-    "startDate": "2026-08-31 14:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202608279342",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0827/65bc5e16e75e42808bf2dbce0d7c7f0a.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "mega-21143",
-    "theater": "MEGABOX",
-    "title": "비광",
-    "startDate": "2026-08-31 14:30:00",
-    "url": "https://megabox.co.kr/event/detail?eventNo=21143",
-    "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/08/28/7ABMKO41wY5bNTc0YC3IsyekDvfJbV8a.jpg",
-    "category": "빵원티켓"
-  },
-  {
-    "id": "cgv-202608279877",
-    "theater": "CGV",
-    "title": "모모와 다락방의 수상한 요괴들",
-    "startDate": "2026-08-31 16:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202608279877",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0828/22986155f3314139b8ccfded05ccd080.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "lotte-201210016922014-24745",
-    "theater": "LOTTECINEMA",
-    "title": "싱 어게인",
-    "startDate": "2026-09-01 11:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202609/24745_201_1.jpg",
-    "category": "무비싸다구"
-  },
-  {
     "id": "mega-21156",
     "theater": "MEGABOX",
     "title": "인턴",
@@ -124,15 +25,6 @@
     "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202608279432",
     "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0827/85d2b64c75fd4e91b2166a8fefc7eaa6.jpg",
     "category": "서프라이즈쿠폰"
-  },
-  {
-    "id": "lotte-201210016922014-24648",
-    "theater": "LOTTECINEMA",
-    "title": "비광",
-    "startDate": "2026-09-01 14:00:00",
-    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
-    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202609/24648_201_1.jpg",
-    "category": "무비싸다구"
   },
   {
     "id": "cgv-202608279879",
