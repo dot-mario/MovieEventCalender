@@ -268,5 +268,32 @@
     "url": "https://megabox.co.kr/event/detail?eventNo=21213",
     "imageUrl": "https://img.megabox.co.kr/SharedImg/event/2026/09/08/GePHsXipQpJu4o6PiO5tuv0q8kTTyow9.jpg",
     "category": "빵원티켓"
+  },
+  {
+    "id": "lotte-201210016922014-24829",
+    "theater": "LOTTECINEMA",
+    "title": "아가미",
+    "startDate": "2026-09-10 11:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202609/24829_201_1.jpg",
+    "category": "무비싸다구"
+  },
+  {
+    "id": "lotte-201210016922014-24329",
+    "theater": "LOTTECINEMA",
+    "title": "스파이더맨: 브랜드 뉴 데이",
+    "startDate": "2026-09-10 14:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202607/24329_201_1.jpg",
+    "category": "무비싸다구"
+  },
+  {
+    "id": "lotte-201210016922014-24745",
+    "theater": "LOTTECINEMA",
+    "title": "싱 어게인",
+    "startDate": "2026-09-10 16:00:00",
+    "url": "https://www.lottecinema.co.kr/NLCMW/Event/EventTemplateSpeedMulti?eventId=201210016922014",
+    "imageUrl": "https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202609/24745_201_1.jpg",
+    "category": "무비싸다구"
   }
 ]
