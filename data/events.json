@@ -9,15 +9,6 @@
     "category": "빵원티켓"
   },
   {
-    "id": "cgv-202608279343",
-    "theater": "CGV",
-    "title": "싱 어게인",
-    "startDate": "2026-09-01 12:00:00",
-    "url": "https://cgv.co.kr/evt/eventDetail?evntNo=202608279343",
-    "imageUrl": "https://cdn.cgv.co.kr/cgvpomscontent/ips/evnt/2026/0827/99df703359fe46caa0d486c3e79c9173.jpg",
-    "category": "서프라이즈쿠폰"
-  },
-  {
     "id": "cgv-202608279432",
     "theater": "CGV",
     "title": "딥 워터",
